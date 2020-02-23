@@ -1,0 +1,22 @@
+# -----------------------------------------------------------------------
+# Date: 23/02/2020
+#
+# Create the catalog description in the NLS format again we borrow 
+# directly from the electronics store example
+#
+# -----------------------------------------------------------------------
+
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+#
+# Import the Product Catalog and Classification Catalog
+#
+
+# Language
+$lang=en
+
+# Create Catalog
+UPDATE Catalog;id[unique=true];name[lang=$lang]
+ ;CultbeautyClassification;"Cult Beauty Classification"
+ ;cultbeautyProductCatalog;"Cult Beauty Product Catalog"
