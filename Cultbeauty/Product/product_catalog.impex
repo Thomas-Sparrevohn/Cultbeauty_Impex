@@ -29,3 +29,5 @@ INSERT_UPDATE CatalogVersion;catalog(id)[unique=true];version[unique=true];activ
 # Set the Name of the catalog for this language
 UPDATE Catalog;id[unique=true];name[lang=$lang]
  ;cultbeautyProductCatalog;"Cultbeauty Product Catalog"
+
+ 
