@@ -26,7 +26,7 @@
 # Import the Product Catalog and Classification Catalog
 #
 
-$productCatalog=clutbeautyProductCatalog
+$productCatalog=cultbeautyProductCatalog
 $classificationCatalog=CultbeautyClassification
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $languages=en
