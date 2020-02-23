@@ -1,0 +1,53 @@
+
+# -----------------------------------------------------------------------
+# Date: 23/02/2020
+#
+# Cult Beauty Product and Classifications Catalog
+#
+# Direct copy from electronics catalog example as per SAP Commerce Cloud,
+# following the SAP structure language dependend files and other 
+# attributes creates a new file ending with _en as a example
+# 
+# Toplevel catalogue structure defines
+#
+#           Product Catalog in a language 
+#           Classification system
+#
+#  Sets tax class initially as a precausion but this should map to S4H
+#  
+#
+# -----------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+# 
+# Import the Product Catalog and Classification Catalog
+#
+
+$productCatalog=clutbeautyProductCatalog
+$classificationCatalog=CultbeautyClassification
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$languages=en
+
+# Product catalog, Creates the raw Culybeauty catalog
+INSERT_UPDATE Catalog;id[unique=true]
+;$productCatalog
+
+# Cultbeaty Classification catalog
+INSERT_UPDATE ClassificationSystem;id[unique=true]
+;$classificationCatalog
+
+# Product versions for product catalogs
+INSERT_UPDATE CatalogVersion;catalog(id)[unique=true];version[unique=true];active;languages(isoCode);readPrincipals(uid)
+;$productCatalog;Staged;false;$languages;employeegroup
+;$productCatalog;Online;true;$languages;employeegroup
+
+# Insert Classifications System Version
+INSERT_UPDATE ClassificationSystemVersion;catalog(id)[unique=true];version[unique=true];active;inclPacking[virtual=true,default=true];inclDuty[virtual=true,default=true];inclFreight[virtual=true,default=true];inclAssurance[virtual=true,default=true]
+;$classificationCatalog;1.0;true
+
+# Create default tax row for all products in product catalog
+INSERT_UPDATE TaxRow;$catalogVersion;tax(code)[unique=true];pg(code)[unique=true];ug(code)[unique=true]
+;;jp-vat-full;jp-vat-full;jp-taxes
