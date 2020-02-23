@@ -1,0 +1,32 @@
+# -----------------------------------------------------------------------
+# Date: 23/02/202
+#
+# Again we model on the SAP examples as create catagories. Catagories are 
+# used for logical groupings that needs futher embelishment such as images
+# and descriptions.
+#
+# In the case of Cult Beauty "brand" and "why_cult" would be obvious 
+# exampels. While not entirely safe brand name are used as primary
+# code
+#
+
+# -----------------------------------------------------------------------
+# Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
+# -----------------------------------------------------------------------
+# ImpEx for Importing Categories into Electronics Store
+
+# Macros / Replacement Parameter definitions
+$productCatalog=cultbeautyProductCatalog
+$productCatalogName="Cult Beauty Product Catalog"
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=source(code, $catalogVersion)[unique=true]
+$categories=target(code, $catalogVersion)[unique=true]
+
+# Insert Categories
+INSERT_UPDATE Category;code[unique=true];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+;Brands
+;Sample
+;Gift
+
+# Insert Category Structure
+INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
