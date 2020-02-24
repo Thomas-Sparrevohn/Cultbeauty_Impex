@@ -21,12 +21,17 @@ $productCatalogName="Cult Beauty Product Catalog"
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $supercategories=source(code, $catalogVersion)[unique=true]
 $categories=target(code, $catalogVersion)[unique=true]
+$lang=en
 
+# Primary key for the 
 # Insert Categories
-INSERT_UPDATE Category;code[unique=true];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
-;Brands
-;Sample
-;Gift
+INSERT_UPDATE Category;code[unique=true];description[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+;Brands;'Cult Beauty Brands Catagory';
+;Sample;'Sample Products Catagory';
+;Gift;'Gift bags Category';
 
 # Insert Category Structure
 INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
+;Sample;Brands
+;Gift;Brands
+
