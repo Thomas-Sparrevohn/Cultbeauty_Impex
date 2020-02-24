@@ -23,12 +23,17 @@ $supercategories=source(code, $catalogVersion)[unique=true]
 $categories=target(code, $catalogVersion)[unique=true]
 $lang=en
 
-# Primary key for the 
+#
+# Primary key for the supercatagories are Brands for all the brands that Cult Beauty sells
+# "Sample" for the Catagory for all product Samples (They are variants as well) and
+# "Gift" for Gift bags etc etc. Gift catagory are a bit fishy
+#
+
 # Insert Categories
 INSERT_UPDATE Category;code[unique=true];name[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
-;Brands;'Cult Beauty Brands Catagory';
-;Sample;'Sample Products Catagory';
-;Gift;'Gift bags Category';
+;Brands;"Cult Beauty Brands Catagory";
+;Sample;"Sample Products Catagory";
+;Gift;"Gift bags Category";
 
 # Insert Category Structure
 INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
