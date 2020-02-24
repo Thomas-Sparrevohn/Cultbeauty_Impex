@@ -25,7 +25,7 @@ $lang=en
 
 # Primary key for the 
 # Insert Categories
-INSERT_UPDATE Category;code[unique=true];description[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+INSERT_UPDATE Category;code[unique=true];name[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;Brands;'Cult Beauty Brands Catagory';
 ;Sample;'Sample Products Catagory';
 ;Gift;'Gift bags Category';
