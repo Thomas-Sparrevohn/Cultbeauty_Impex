@@ -30,7 +30,7 @@ $lang=en
 #
 
 # Insert Categories
-INSERT_UPDATE Category;code[unique=true];name[lang=$lang];$supercatagories;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+INSERT_UPDATE Category;code[unique=true];name[lang=$lang];$supercategorie;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;Brands;"Cult Beauty Brands Catagory";
 ;Sample;"Sample Products Catagory";Brands
 ;Gift;"Gift bags Category";Brands
