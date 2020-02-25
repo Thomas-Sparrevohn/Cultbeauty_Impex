@@ -30,13 +30,253 @@ $lang=en
 #
 
 # Insert Categories
-INSERT_UPDATE Category;code[unique=true];name[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+INSERT_UPDATE Category;code[unique=true];name[lang=$lang];$supercatagories;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;Brands;"Cult Beauty Brands Catagory";
-;Sample;"Sample Products Catagory";
-;Gift;"Gift bags Category";
+;Sample;"Sample Products Catagory";Brands
+;Gift;"Gift bags Category";Brands
+#
+# Dump from kit changes to fit
+#
+;ABD;Augustinus Bader;Brands
+;AES;Aesop;Brands
+;ALE;ALLEVEN;Brands
+;ALF;Alfresco;Brands
+;ALG;Algenist;Brands
+;ALP;Alpha-H;Brands
+;AME;Ameliorate;Brands
+;ANA;Anastasia Beverly Hills;Brands
+;ANG;Angela Caglia;Brands
+;ANP;Advanced Nutrition Programme;Brands
+;ANY;Anya Smells;Brands
+;AOS;Allies of Skin;Brands
+;APA;Apa Beauty;Brands
+;ATM;anatomÄ“;Brands
+;AUR;Aurelia Probiotic Skincare;Brands
+;BAB;Bjork & Berries;Brands
+;BAD;BAD NORWEGIAN;Brands
+;BAX;Baxter of California;Brands
+;BBA;Beauty Bakerie;Brands
+;BBI;BeautyBio;Brands
+;BBL;Beautyblender;Brands
+;BCA;BECCA;Brands
+;BEL;Bella Freud;Brands
+;BEN;Benefit;Brands
+;BEY;BeYou;Brands
+;BLE;BLEACH LONDON;Brands
+;BLM;BLEACH LONDON;Brands
+;BON;Bed of Nails;Brands
+;BOT;African Botanics;Brands
+;BRI;Briogeo;Brands
+;BUX;BUXOM;Brands
+;BYT;BY TERRY;Brands
+;CAE;Coco & Eve;Brands
+;CAU;Caudalie;Brands
+;CBY;Cult Beauty;Brands
+;CIT;Cire Trudon;Brands
+;CLO;Cloud Nine;Brands
+;COB;C.O. Bigelow;Brands
+;COO;COOLA;Brands
+;COV;Cover FX;Brands
+;CSS;Cor;Brands
+;CUB;Cubid CBD;Brands
+;DAK;Sonya Dakar;Brands
+;DAM;Dame Products;Brands
+;DAR;DARLING;Brands
+;DAV;Davines;Brands
+;DBS;Dr. Barbara Sturm;Brands
+;DCL;DCL;Brands
+;DCR;Decree;Brands
+;DEM;de Mamiel;Brands
+;DEO;DeoDoc;Brands
+;DIZ;Dizziak;Brands
+;DOD;DoDow;Brands
+;DPE;DISCIPLE Skincare;Brands
+;DRG;Dr. Dennis Gross Skincare;Brands
+;DRM;DERMAFLASH;Brands
+;DRU;Drunk Elephant;Brands
+;EAS;Easilocks;Brands
+;EBY;Embryolisse Laboratories;Brands
+;ECO;Ecooking;Brands
+;EJA;Elizabeth and James;Brands
+;ELL;Ellis Brooklyn;Brands
+;EMH;Emma Hardie Skincare;Brands
+;EQU;Equi London;Brands
+;ERN;Erno Laszlo;Brands
+;ERS;Ernest Supplies;Brands
+;EVE;Eve Lom;Brands
+;FAI;Fairydrops;Brands
+;FAR;FARMACY;Brands
+;FPJ;DR FRANCES PRENNA JONES;Brands
+;FRB;frank body;Brands
+;FRE;fresh;Brands
+;FSI;FARSÃLI;Brands
+;FUR;Fur;Brands
+;GHD;ghd;Brands
+;GLC;GLAMCOR;Brands
+;GLD;Goldfaden MD;Brands
+;GLO;Glow Recipe;Brands
+;GOO;goop;Brands
+;GRL;Girl Undiscovered;Brands
+;HER;Herbivore;Brands
+;HGL;HealGel;Brands
+;HOU;Hourglass;Brands
+;HUD;Huda Beauty;Brands
+;ICO;ICONIC LONDON;Brands
+;IND;Indie Lee;Brands
+;INK;THE INKEY LIST;Brands
+;INN;Innersense;Brands
+;INV;invisibobble;Brands
+;IOP;Isle of Paradise;Brands
+;IST;Institut Esthederm;Brands
+;ITC;IT Cosmetics;Brands
+;JAR;Dr. Jart+;Brands
+;JIL;Jillian Dempsey;Brands
+;JOL;Jo Loves;Brands
+;JOU;Jouer Cosmetics;Brands
+;JRO;Josh Rosebrook;Brands
+;JVA;Joanna Vargas;Brands
+;KAI;Kai;Brands
+;KAU;Susanne Kaufmann;Brands
+;KBM;Cult Beauty;Brands
+;KIK;KIKI Health;Brands
+;KIN;111SKIN;Brands
+;KJA;Kjaer Weis;Brands
+;KNC;KNC BEAUTY;Brands
+;KNJ;The Konjac Sponge Company;Brands
+;KOS;Kosas;Brands
+;KSV;Kate Somerville;Brands
+;KVA;Kevyn Aucoin;Brands
+;KVM;KEVIN.MURPHY;Brands
+;LAN;Lanolips;Brands
+;LAR;Larry King Hair Care;Brands
+;LAU;Laura Mercier;Brands
+;LBZ;Luna Bronze;Brands
+;LEG;Legology;Brands
+;LEL;Le Labo;Brands
+;LEO;Leonor Greyl;Brands
+;LEV;Dr. LEVY Switzerland;Brands
+;LIM;Lime Crime;Brands
+;LIV;Living Proof;Brands
+;LLA;Lilly Lashes;Brands
+;LOT;White Lotus;Brands
+;LUM;Lumity;Brands
+;LUN;FOREO;Brands
+;LUX;79 Lux;Brands
+;LVE;Elvie;Brands
+;LVP;Living Proof;Brands
+;LXR;LIXIRSKIN;Brands
+;MAM;Mabel + Meg;Brands
+;MAR;MARA;Brands
+;MDB;Margaret Dabbs;Brands
+;MEM;MEMO PARIS;Brands
+;MGC;MGC Derma;Brands
+;MGO;MALIN + GOETZ;Brands
+;MIL;Milk Makeup;Brands
+;MOA;MOA - Magic Organic Apothecary;Brands
+;MOL;MOLTON BROWN;Brands
+;MOO;Moon Juice;Brands
+;MRP;Morphe;Brands
+;MRV;Marvis;Brands
+;MVO;MV Organic Skincare;Brands
+;NAR;NARS;Brands
+;NAT;Natasha Denona;Brands
+;NIO;NIOD;Brands
+;NUD;Nudestix;Brands
+;NUE;The Nue Co.;Brands
+;NUF;NuFACE;Brands
+;NUR;Nurse Jamie;Brands
+;NUX;Nuxe;Brands
+;NYX;NYX Professional Makeup;Brands
+;ODA;OdacitÃ©;Brands
+;OLA;OLAPLEX;Brands
+;OMO;Omorovicza;Brands
+;ORB;Oribe;Brands
+;ORD;The Ordinary;Brands
+;OSK;Oskia;Brands
+;OUA;OUAI Haircare;Brands
+;OVR;OVEROSE;Brands
+;PAI;Pai Skincare;Brands
+;PAN;Panasonic;Brands
+;PAT;Patchology;Brands
+;PAU;PAULA''S CHOICE;Brands
+;PFL;Laboratory Perfumes;Brands
+;PGY;Pureology;Brands
+;PHI;Philip Kingsley;Brands
+;PIX;Pixi;Brands
+;PLA;Playa;Brands
+;POC;Pinch of Colour;Brands
+;PTA;PATRICK TA;Brands
+;PTB;Passport To Beauty;Brands
+;PTR;Peter Thomas Roth;Brands
+;RAE;Rae Morris;Brands
+;RCO;R+Co;Brands
+;RDF;Rituel de Fille;Brands
+;REN;REN CLEAN SKINCARE;Brands
+;RHA;rahua;Brands
+;RJU;Rejuvenated Ltd;Brands
+;ROE;Dr Roebuck''s;Brands
+;RON;RÃ“EN;Brands
+;RUB;Rubis;Brands
+;RVT;RevitaLash;Brands
+;SAC;Sachajuan;Brands
+;SAN;Sana Jardin;Brands
+;SAS;Sand&Sky;Brands
+;SAT;Saturday Skin;Brands
+;SCH;Sarah Chapman;Brands
+;SDJ;Sol de Janeiro;Brands
+;SDL;Skin Design London;Brands
+;SHA;Shani Darden Skin Care;Brands
+;SHH;SHHHOWERCAP;Brands
+;SHI;Shiseido;Brands
+;SIM;simplehuman;Brands
+;SKE;SILKE London;Brands
+;SKY;skyn ICELAND;Brands
+;SLI;Slip;Brands
+;SMI;Smile Makers;Brands
+;SMK;Hair by Sam McKnight;Brands
+;SPA;Spacemasks;Brands
+;SRF;SUMMER FRIDAYS;Brands
+;SRN;Sunday Riley;Brands
+;STI;Stila Cosmetics;Brands
+;STJ;Soleil Toujours;Brands
+;SUM;Su-Man Skincare;Brands
+;SUR;Surratt;Brands
+;TAN;Tan-Luxe;Brands
+;TAT;Tata Harper;Brands
+;TBC;The Beauty Chef;Brands
+;TCF;Too Cool For School;Brands
+;THC;Escentric Molecules;Brands
+;THP;Therapie;Brands
+;TIA;Tria;Brands
+;TIL;Charlotte Tilbury;Brands
+;TOM;Tom Dixon;Brands
+;TOO;Too Faced;Brands
+;TPV;The Perfect V;Brands
+;TRB;Frances Prescott;Brands
+;TRO;St. Tropez;Brands
+;TWE;Tweezerman;Brands
+;TYF;Thank You Farmer;Brands
+;UMA;Uma;Brands
+;UNB;Unbound;Brands
+;UOM;UOMA BEAUTY;Brands
+;URB;Urban Apothecary;Brands
+;VEN;VENeffect;Brands
+;VER;Verso;Brands
+;VIE;Vie Healing;Brands
+;VIN;Vintner''s Daughter;Brands
+;VIR;Virtue;Brands
+;VIS;Viseart;Brands
+;VOT;VOTARY;Brands
+;WCO;WelleCo;Brands
+;WET;Wet Brush-Pro;Brands
+;YUR;Yu Ling Rollers;Brands
+;ZEL;Zelens;Brands
+;ZIP;ZIIP Beauty;Brands
+;ZIT;ZITSTICKA;Brands
+;ZOE;ZOEVA;Brands
 
 # Insert Category Structure
-INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
-;Sample;Brands
-;Gift;Brands
+#INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
+#;Sample;Brands
+#;Gift;Brands
 
