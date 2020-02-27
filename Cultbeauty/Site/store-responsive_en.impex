@@ -2,7 +2,7 @@
 # Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 # -----------------------------------------------------------------------
 #
-# Import the Electronics BaseStore
+# Import the Cult Beauty BaseStore
 #
 
 # Language
@@ -10,4 +10,4 @@ $lang=en
 
 # Create Base Store
 UPDATE BaseStore;uid[unique=true];name[lang=$lang]
- ;electronics;"Electronics Store"
+ ;cultbeauty;"Cult Beauty Store"
