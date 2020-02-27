@@ -11,3 +11,4 @@ $lang=en
 # Create Content Catalog
 UPDATE ContentCatalog;id[unique=true];name[lang=$lang]
  ;cultbeautyContentCatalog;"Cult Beauty Content Catalog"
+
