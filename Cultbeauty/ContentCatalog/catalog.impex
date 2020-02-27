@@ -21,11 +21,3 @@ INSERT_UPDATE CatalogVersion;catalog(id)[unique=true];version[unique=true];activ
 # -----------------------------------------------------------------------
 
 
-$syncJob=sync $contentCatalog:Staged->Online
-
-INSERT_UPDATE CatalogVersion;catalog(id)[unique=true];version[unique=true];readPrincipals(uid)[mode=append];writePrincipals(uid)[mode=append]
-;cultbeautyContentCatalog;Staged;;cmsmanagergroup
-;cultbeautyContentCatalog;Online;cmsmanagergroup;;
-
-INSERT_UPDATE CatalogVersionSyncJob; code[unique=true]; syncPrincipals(uid)[mode=append]; syncPrincipalsOnly;
-;$syncJob;cmsmanagergroup,powertools-cmsmanagergroup;true
