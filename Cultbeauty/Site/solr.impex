@@ -33,22 +33,22 @@ UPDATE BaseSite;uid[unique=true];solrFacetSearchConfiguration(name)
 
 # Define price range set
 INSERT_UPDATE SolrValueRangeSet;name[unique=true];qualifier;type;solrValueRanges(&rangeValueRefID)
-;electronicsPriceRangeUSD;USD;double;rangeRefUSD1,rangeRefUSD2,rangeRefUSD3,rangeRefUSD4,rangeRefUSD5
-;electronicsPriceRangeJPY;JPY;double;rangeRefJPY1,rangeRefJPY2,rangeRefJPY3,rangeRefJPY4,rangeRefJPY5
+;cultbeautyPriceRangeUSD;USD;double;rangeRefUSD1,rangeRefUSD2,rangeRefUSD3,rangeRefUSD4,rangeRefUSD5
+;cultbeautyPriceRangeJPY;JPY;double;rangeRefJPY1,rangeRefJPY2,rangeRefJPY3,rangeRefJPY4,rangeRefJPY5
 
 # Define price ranges
 INSERT_UPDATE SolrValueRange;&rangeValueRefID;solrValueRangeSet(name)[unique=true];name[unique=true];from;to
-;rangeRefUSD1;electronicsPriceRangeUSD;      $0-$49.99;   0;  49.99
-;rangeRefUSD2;electronicsPriceRangeUSD;    $50-$199.99;  50; 199.99
-;rangeRefUSD3;electronicsPriceRangeUSD;   $200-$499.99; 200; 499.99
-;rangeRefUSD4;electronicsPriceRangeUSD;   $500-$999.99; 500; 999.99
-;rangeRefUSD5;electronicsPriceRangeUSD;$1,000-$100,000;1000; 100000
+;rangeRefUSD1;cultbeautyPriceRangeUSD;      $0-$49.99;   0;  49.99
+;rangeRefUSD2;cultbeautyPriceRangeUSD;    $50-$199.99;  50; 199.99
+;rangeRefUSD3;cultbeautyPriceRangeUSD;   $200-$499.99; 200; 499.99
+;rangeRefUSD4;cultbeautyPriceRangeUSD;   $500-$999.99; 500; 999.99
+;rangeRefUSD5;cultbeautyPriceRangeUSD;$1,000-$100,000;1000; 100000
 
-;rangeRefJPY1;electronicsPriceRangeJPY;           ¥0-¥4,999;     0;    4999
-;rangeRefJPY2;electronicsPriceRangeJPY;      ¥5,000-¥19,999;  5000;   19999
-;rangeRefJPY3;electronicsPriceRangeJPY;     ¥20,000-¥49,999; 20000;   49999
-;rangeRefJPY4;electronicsPriceRangeJPY;     ¥50,000-¥99,999; 50000;   99999
-;rangeRefJPY5;electronicsPriceRangeJPY;¥100,000-¥10,000,000;100000;10000000
+;rangeRefJPY1;cultbeautyPriceRangeJPY;           ¥0-¥4,999;     0;    4999
+;rangeRefJPY2;cultbeautyPriceRangeJPY;      ¥5,000-¥19,999;  5000;   19999
+;rangeRefJPY3;cultbeautyPriceRangeJPY;     ¥20,000-¥49,999; 20000;   49999
+;rangeRefJPY4;cultbeautyPriceRangeJPY;     ¥50,000-¥99,999; 50000;   99999
+;rangeRefJPY5;cultbeautyPriceRangeJPY;¥100,000-¥10,000,000;100000;10000000
 
 
 # Non-facet properties
@@ -83,14 +83,14 @@ INSERT_UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[
 # Category fields
 INSERT_UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=true];type(code);localized[default=false];multiValue[default=true];categoryField[default=true];useForSpellchecking[default=false];useForAutocomplete[default=false];fieldValueProvider;ftsPhraseQuery[default=false];ftsPhraseQueryBoost;ftsQuery[default=false];ftsQueryBoost;ftsFuzzyQuery[default=false];ftsFuzzyQueryBoost
 ;$solrIndexedType; allCategories   	;string ;false;;;    ;   ;categoryCodeValueProvider					;    ;  ;    ;  ;    ;
-;$solrIndexedType; categoryName     ;text   ;true;;;true;true;electronicsCategoryNameValueProvider     ;true;40;true;20;true;10
-;$solrIndexedType; brandName        ;text   ;true;;;    ;    ;electronicsBrandCategoryNameValueProvider;    ;  ;    ;  ;    ;
+;$solrIndexedType; categoryName     ;text   ;true;;;true;true;cultbeautyCategoryNameValueProvider     ;true;40;true;20;true;10
+;$solrIndexedType; brandName        ;text   ;true;;;    ;    ;cultbeautyBrandCategoryNameValueProvider;    ;  ;    ;  ;    ;
 
 # Category facets
 INSERT_UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=true];type(code);multiValue[default=true];facet[default=true];facetType(code);facetSort(code);priority;visible;categoryField[default=true];fieldValueProvider;facetDisplayNameProvider;topValuesProvider
 ;$solrIndexedType; categoryPath  	;string;;;Refine		;Alpha;-9999;false;false;categoryPathValueProvider;
-;$solrIndexedType; category      	;string;;;Refine		;Alpha; 6000;true;;electronicsCategoryCodeValueProvider;categoryFacetDisplayNameProvider;defaultTopValuesProvider
-;$solrIndexedType; brand         	;string;;;Refine		;Alpha; 5000;true;;electronicsBrandCategoryCodeValueProvider;categoryFacetDisplayNameProvider;defaultTopValuesProvider
+;$solrIndexedType; category      	;string;;;Refine		;Alpha; 6000;true;;cultbeautyCategoryCodeValueProvider;categoryFacetDisplayNameProvider;defaultTopValuesProvider
+;$solrIndexedType; brand         	;string;;;Refine		;Alpha; 5000;true;;cultbeautyBrandCategoryCodeValueProvider;categoryFacetDisplayNameProvider;defaultTopValuesProvider
 
 # Other facet properties
 INSERT_UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[unique=true];type(code);sortableType(code);currency[default=false];localized[default=false];multiValue[default=false];facet[default=true];facetType(code);facetSort(code);priority;visible;useForSpellchecking[default=false];useForAutocomplete[default=false];fieldValueProvider;facetDisplayNameProvider;customFacetSortProvider;topValuesProvider;rangeSets(name)
