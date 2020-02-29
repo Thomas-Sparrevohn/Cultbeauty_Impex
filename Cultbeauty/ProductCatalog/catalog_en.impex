@@ -22,8 +22,8 @@ $lang=en
 
 # Create Catalog
 UPDATE Catalog;id[unique=true];name[lang=$lang]
- ;CultbeautyClassification;Cult Beauty Classification"
- ;cultbeautyProductCatalog;Cult Beauty Product Catalog"
+ ;CultbeautyClassification;Cult Beauty Classification
+ ;cultbeautyProductCatalog;Cult Beauty Product Catalog
 
  #
  # Load some Product code (sku), names and descriptions
