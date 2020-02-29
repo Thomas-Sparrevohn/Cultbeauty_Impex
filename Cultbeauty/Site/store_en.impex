@@ -1,4 +1,4 @@
-# -----------------------------------------------------------------------
+b# -----------------------------------------------------------------------
 # Copyright (c) 2019 SAP SE or an SAP affiliate company. All rights reserved.
 # -----------------------------------------------------------------------
 #
@@ -10,4 +10,4 @@ $lang=en
 
 # Create Base Store
 UPDATE BaseStore;uid[unique=true];name[lang=$lang]
- ;electronics;"Cult Beauty Store"
+ ;cultbueaty;"Cult Beauty Store"
