@@ -29,6 +29,7 @@ UPDATE Catalog;id[unique=true];name[lang=$lang]
  # Load some Product code (sku), names and descriptions
  # (For now it loads samples) but all is single variant
  #
+ INSERT_UPDATE Product;code[unique=true];name[lang=$lang];$catalogVersion
 ;SAMPLE_TAT017;"SAMPLE - Nourishing Oil Cleanser"
 ;LIV003;"Full Dry Volume Blast"
 ;SAMPLE_NUX005;"SAMPLE - Creme Fraiche Normal Skin"
