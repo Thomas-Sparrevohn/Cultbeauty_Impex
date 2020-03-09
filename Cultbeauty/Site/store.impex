@@ -6,7 +6,7 @@
 #
 
 $productCatalog=cultbeautyProductCatalog
-$classificationCatalog=cultbeautyClassification
+$classificationCatalog=CultbeautyClassification
 $currencies=JPY,USD
 $net=false
 $storeUid=cultbeauty
