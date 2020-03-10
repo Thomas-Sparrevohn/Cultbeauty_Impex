@@ -17,6 +17,7 @@ $productCatalog=cultbeautyProductCatalog
 $classificationCatalog=CultbeautyClassification
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $approved=approvalstatus(code)[default='approved']
+$taxGroup=Europe1PriceFactory_PTG(code)[default=eu-vat-full]
 
 # Language
 $lang=en
@@ -30,7 +31,7 @@ UPDATE Catalog;id[unique=true];name[lang=$lang]
  # Load some Product code (sku), names and descriptions
  # (For now it loads samples) but all is single variant
  #
- INSERT_UPDATE Product;code[unique=true];name[lang=$lang];$catalogVersion;$approved
+ INSERT_UPDATE Product;code[unique=true];name[lang=$lang];$catalogVersion;$approved;$taxGroup
 ;SAMPLE_TAT017;"SAMPLE - Nourishing Oil Cleanser"
 ;LIV003;"Full Dry Volume Blast"
 ;SAMPLE_NUX005;"SAMPLE - Creme Fraiche Normal Skin"
