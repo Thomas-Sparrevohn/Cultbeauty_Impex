@@ -1396,7 +1396,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;SAMPLE_TIL049;Samples, TIL
 
 # Create the base product to brand relation
-UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);
+UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalogVersion
 ;TIL116;TIL
 ;BEN075;BEN
 ;GOO002;GOO
