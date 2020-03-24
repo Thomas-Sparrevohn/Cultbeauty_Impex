@@ -3581,7 +3581,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;DAV073DAV073_RED90;DAV
 ;NAR057_EDEN;NAR
 ;UOM004_SAVAGE;UOM
-;SAMPLE2_DRU004;SAM
+#;SAMPLE2_DRU004;SAM
 ;TIL061_Liv_It_Up;TIL
 ;KSV010;KSV
 ;ITC030_NESAIS;ITC
@@ -4324,7 +4324,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;NAR016_COLOUR;NAR
 ;NAT006_55W;NAT
 ;BEN016;BEN
-;SAMPLE___PTR031___PTR031;SAM
+#;SAMPLE___PTR031___PTR031;SAM
 ;NAR032_HAZEL;NAR
 ;LAU023_PINK;LAU
 ;ZOE032;ZOE
@@ -5193,7 +5193,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;CAU092;CAU
 ;NYX033_Pure_Gold;NYX
 ;THP018;THP
-;SAMPLE15ML_ALP016;SAM
+#;SAMPLE15ML_ALP016;SAM
 ;AES039_200ml;AES
 ;BAX011;BAX
 ;ANA081_Moon_Jelly;ANA
@@ -5656,7 +5656,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;ANA082_Rosette;ANA
 ;ITC016;ITC
 ;ATM003;ATM
-;SAMPLET_PAI010;SAM
+#;SAMPLET_PAI010;SAM
 ;THC031;THC
 ;BCA147_ROUGE;BCA
 ;LUN033_FUCHSI;LUN
@@ -7172,7 +7172,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;DCL005;DCL
 ;TAT099;TAT
 ;MIL022_SMILEY;MIL
-;SAMPLE___CAU019;SAM
+#;SAMPLE___CAU019;SAM
 ;NYX021_Taupe;NYX
 ;MIL044_GLDHON;MIL
 ;BYT124_CREAM;BYT
@@ -8246,7 +8246,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;ICO028_DONOT;ICO
 ;EVE004_100ml;EVE
 ;MOL059;MOL
-;SAMPLE15ML_DRG042;SAM
+#;SAMPLE15ML_DRG042;SAM
 ;TOO034_Warm_Sand;TOO
 ;SAC011;SAC
 ;ITC039_MEDBRN;ITC
@@ -8369,7 +8369,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;BYT072_4__Rose_Ease;BYT
 ;NYX101_SMUDGE;NYX
 ;BYT124_PINK;BYT
-;SAMPLE__ZEL003__ZEL003;SAM
+#;SAMPLE__ZEL003__ZEL003;SAM
 ;NAT030;NAT
 ;LAU016_SMOKE;LAU
 ;NYX165_FREE;NYX
@@ -8747,7 +8747,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;NAR014;NAR
 ;THC008;THC
 ;INK024;INK
-;SAMPLE15ML_ALP004;SAM
+#;SAMPLE15ML_ALP004;SAM
 ;PIX183_SORBET;PIX
 ;OMO110;OMO
 ;HOU069_SABLE;HOU
@@ -10056,7 +10056,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;TIL144_3C;TIL
 ;ITC036_FAIR;ITC
 ;LAU107_FUCHSI;LAU
-;SNR004_50ML;SNR
+#;SNR004_50ML;SNR
 ;HOU074_SFTBRN;HOU
 ;TAT083;TAT
 ;NYX071;NYX
