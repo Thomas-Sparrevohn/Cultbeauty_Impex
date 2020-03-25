@@ -24,17 +24,17 @@ $categories=target(code, $catalogVersion)[unique=true]
 $lang=en
 
 #
-# Primary key for the supercatagories are Brands for all the brands that Cult Beauty sells
-# "Sample" for the Catagory for all product Samples (They are variants as well) and
+# Primary key for the supercatagories are brands for all the brands that Cult Beauty sells
+# "Sample" for the Catagory for all product samples (They are variants as well) and
 # "Gift" for Gift bags etc etc. Gift catagory are a bit fishy
 #
 
 # Insert Categories
 INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
-;Brands;"Cult Beauty Brands Catagory";
-;Samples;"Sample Products Catagory";
-;Gift;"Gift bags Category";
-;Inactive;"Cult Beauty Sample Brands "
+;brands;"Cult Beauty brands Catagory";
+;samples;"Sample Products Catagory";
+;gift;"Gift bags Category";
+;inactive;"Cult Beauty Sample brands "
 
 #
 # Dump from kit changes to fit
@@ -280,1120 +280,1120 @@ INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang
 
 # Insert Category Structure
 INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
-;Samples;Brands
-;Gift;Brands
-;Inactive;Brands
-;ABD;Brands
-;AES;Brands
-;ALE;Brands
-;ALF;Brands
-;ALG;Brands
-;ALP;Brands
-;AME;Brands
-;ANA;Brands
-;ANG;Brands
-;ANP;Brands
-;ANY;Brands
-;AOS;Brands
-;APA;Brands
-;ATM;Brands
-;AUR;Brands
-;BAB;Brands
-;BAD;Brands
-;BAX;Brands
-;BBA;Brands
-;BBI;Brands
-;BBL;Brands
-;BCA;Brands
-;BEL;Brands
-;BEN;Brands
-;BEY;Brands
-;BLE;Brands
-;BLM;Brands
-;BON;Brands
-;BOT;Brands
-;BRI;Brands
-;BUX;Brands
-;BYT;Brands
-;CAE;Brands
-;CAU;Brands
-;CBY;Brands
-;CIT;Brands
-;CLO;Brands
-;COB;Brands
-;COO;Brands
-;COV;Brands
-;CSS;Brands
-;CUB;Brands
-;DAK;Brands
-;DAM;Brands
-;DAR;Brands
-;DAV;Brands
-;DBS;Brands
-;DCL;Brands
-;DCR;Brands
-;DEM;Brands
-;DEO;Brands
-;DIZ;Brands
-;DOD;Brands
-;DPE;Brands
-;DRG;Brands
-;DRM;Brands
-;DRU;Brands
-;EAS;Brands
-;EBY;Brands
-;ECO;Brands
-;EJA;Brands
-;ELL;Brands
-;EMH;Brands
-;EQU;Brands
-;ERN;Brands
-;ERS;Brands
-;EVE;Brands
-;FAI;Brands
-;FAR;Brands
-;FPJ;Brands
-;FRB;Brands
-;FRE;Brands
-;FSI;Brands
-;FUR;Brands
-;GHD;Brands
-;GLC;Brands
-;GLD;Brands
-;GLO;Brands
-;GOO;Brands
-;GRL;Brands
-;HER;Brands
-;HGL;Brands
-;HOU;Brands
-;HUD;Brands
-;ICO;Brands
-;IND;Brands
-;INK;Brands
-;INN;Brands
-;INV;Brands
-;IOP;Brands
-;IST;Brands
-;ITC;Brands
-;JAR;Brands
-;JIL;Brands
-;JOL;Brands
-;JOU;Brands
-;JRO;Brands
-;JVA;Brands
-;KAI;Brands
-;KAU;Brands
-;KBM;Brands
-;KIK;Brands
-;KIN;Brands
-;KJA;Brands
-;KNC;Brands
-;KNJ;Brands
-;KOS;Brands
-;KSV;Brands
-;KVA;Brands
-;KVM;Brands
-;LAN;Brands
-;LAR;Brands
-;LAU;Brands
-;LBZ;Brands
-;LEG;Brands
-;LEL;Brands
-;LEO;Brands
-;LEV;Brands
-;LIM;Brands
-;LIV;Brands
-;LLA;Brands
-;LOT;Brands
-;LUM;Brands
-;LUN;Brands
-;LUX;Brands
-;LVE;Brands
-;LVP;Brands
-;LXR;Brands
-;MAM;Brands
-;MAR;Brands
-;MDB;Brands
-;MEM;Brands
-;MGC;Brands
-;MGO;Brands
-;MIL;Brands
-;MOA;Brands
-;MOL;Brands
-;MOO;Brands
-;MRP;Brands
-;MRV;Brands
-;MVO;Brands
-;NAR;Brands
-;NAT;Brands
-;NIO;Brands
-;NUD;Brands
-;NUE;Brands
-;NUF;Brands
-;NUR;Brands
-;NUX;Brands
-;NYX;Brands
-;ODA;Brands
-;OLA;Brands
-;OMO;Brands
-;ORB;Brands
-;ORD;Brands
-;OSK;Brands
-;OUA;Brands
-;OVR;Brands
-;PAI;Brands
-;PAN;Brands
-;PAT;Brands
-;PAU;Brands
-;PFL;Brands
-;PGY;Brands
-;PHI;Brands
-;PIX;Brands
-;PLA;Brands
-;POC;Brands
-;PTA;Brands
-;PTB;Brands
-;PTR;Brands
-;RAE;Brands
-;RCO;Brands
-;RDF;Brands
-;REN;Brands
-;RHA;Brands
-;RJU;Brands
-;ROE;Brands
-;RON;Brands
-;RUB;Brands
-;RVT;Brands
-;SAC;Brands
-;SAN;Brands
-;SAS;Brands
-;SAT;Brands
-;SCH;Brands
-;SDJ;Brands
-;SDL;Brands
-;SHA;Brands
-;SHH;Brands
-;SHI;Brands
-;SIM;Brands
-;SKE;Brands
-;SKY;Brands
-;SLI;Brands
-;SMI;Brands
-;SMK;Brands
-;SPA;Brands
-;SRF;Brands
-;SRN;Brands
-;STI;Brands
-;STJ;Brands
-;SUM;Brands
-;SUR;Brands
-;TAN;Brands
-;TAT;Brands
-;TBC;Brands
-;TCF;Brands
-;THC;Brands
-;THP;Brands
-;TIA;Brands
-;TIL;Brands
-;TOM;Brands
-;TOO;Brands
-;TPV;Brands
-;TRB;Brands
-;TRO;Brands
-;TWE;Brands
-;TYF;Brands
-;UMA;Brands
-;UNB;Brands
-;UOM;Brands
-;URB;Brands
-;VEN;Brands
-;VER;Brands
-;VIE;Brands
-;VIN;Brands
-;VIR;Brands
-;VIS;Brands
-;VOT;Brands
-;WCO;Brands
-;WET;Brands
-;YUR;Brands
-;ZEL;Brands
-;ZIP;Brands
-;ZIT;Brands
-;ZOE;Brands
+;samples;brands
+;gift;brands
+;inactive;brands
+;ABD;brands
+;AES;brands
+;ALE;brands
+;ALF;brands
+;ALG;brands
+;ALP;brands
+;AME;brands
+;ANA;brands
+;ANG;brands
+;ANP;brands
+;ANY;brands
+;AOS;brands
+;APA;brands
+;ATM;brands
+;AUR;brands
+;BAB;brands
+;BAD;brands
+;BAX;brands
+;BBA;brands
+;BBI;brands
+;BBL;brands
+;BCA;brands
+;BEL;brands
+;BEN;brands
+;BEY;brands
+;BLE;brands
+;BLM;brands
+;BON;brands
+;BOT;brands
+;BRI;brands
+;BUX;brands
+;BYT;brands
+;CAE;brands
+;CAU;brands
+;CBY;brands
+;CIT;brands
+;CLO;brands
+;COB;brands
+;COO;brands
+;COV;brands
+;CSS;brands
+;CUB;brands
+;DAK;brands
+;DAM;brands
+;DAR;brands
+;DAV;brands
+;DBS;brands
+;DCL;brands
+;DCR;brands
+;DEM;brands
+;DEO;brands
+;DIZ;brands
+;DOD;brands
+;DPE;brands
+;DRG;brands
+;DRM;brands
+;DRU;brands
+;EAS;brands
+;EBY;brands
+;ECO;brands
+;EJA;brands
+;ELL;brands
+;EMH;brands
+;EQU;brands
+;ERN;brands
+;ERS;brands
+;EVE;brands
+;FAI;brands
+;FAR;brands
+;FPJ;brands
+;FRB;brands
+;FRE;brands
+;FSI;brands
+;FUR;brands
+;GHD;brands
+;GLC;brands
+;GLD;brands
+;GLO;brands
+;GOO;brands
+;GRL;brands
+;HER;brands
+;HGL;brands
+;HOU;brands
+;HUD;brands
+;ICO;brands
+;IND;brands
+;INK;brands
+;INN;brands
+;INV;brands
+;IOP;brands
+;IST;brands
+;ITC;brands
+;JAR;brands
+;JIL;brands
+;JOL;brands
+;JOU;brands
+;JRO;brands
+;JVA;brands
+;KAI;brands
+;KAU;brands
+;KBM;brands
+;KIK;brands
+;KIN;brands
+;KJA;brands
+;KNC;brands
+;KNJ;brands
+;KOS;brands
+;KSV;brands
+;KVA;brands
+;KVM;brands
+;LAN;brands
+;LAR;brands
+;LAU;brands
+;LBZ;brands
+;LEG;brands
+;LEL;brands
+;LEO;brands
+;LEV;brands
+;LIM;brands
+;LIV;brands
+;LLA;brands
+;LOT;brands
+;LUM;brands
+;LUN;brands
+;LUX;brands
+;LVE;brands
+;LVP;brands
+;LXR;brands
+;MAM;brands
+;MAR;brands
+;MDB;brands
+;MEM;brands
+;MGC;brands
+;MGO;brands
+;MIL;brands
+;MOA;brands
+;MOL;brands
+;MOO;brands
+;MRP;brands
+;MRV;brands
+;MVO;brands
+;NAR;brands
+;NAT;brands
+;NIO;brands
+;NUD;brands
+;NUE;brands
+;NUF;brands
+;NUR;brands
+;NUX;brands
+;NYX;brands
+;ODA;brands
+;OLA;brands
+;OMO;brands
+;ORB;brands
+;ORD;brands
+;OSK;brands
+;OUA;brands
+;OVR;brands
+;PAI;brands
+;PAN;brands
+;PAT;brands
+;PAU;brands
+;PFL;brands
+;PGY;brands
+;PHI;brands
+;PIX;brands
+;PLA;brands
+;POC;brands
+;PTA;brands
+;PTB;brands
+;PTR;brands
+;RAE;brands
+;RCO;brands
+;RDF;brands
+;REN;brands
+;RHA;brands
+;RJU;brands
+;ROE;brands
+;RON;brands
+;RUB;brands
+;RVT;brands
+;SAC;brands
+;SAN;brands
+;SAS;brands
+;SAT;brands
+;SCH;brands
+;SDJ;brands
+;SDL;brands
+;SHA;brands
+;SHH;brands
+;SHI;brands
+;SIM;brands
+;SKE;brands
+;SKY;brands
+;SLI;brands
+;SMI;brands
+;SMK;brands
+;SPA;brands
+;SRF;brands
+;SRN;brands
+;STI;brands
+;STJ;brands
+;SUM;brands
+;SUR;brands
+;TAN;brands
+;TAT;brands
+;TBC;brands
+;TCF;brands
+;THC;brands
+;THP;brands
+;TIA;brands
+;TIL;brands
+;TOM;brands
+;TOO;brands
+;TPV;brands
+;TRB;brands
+;TRO;brands
+;TWE;brands
+;TYF;brands
+;UMA;brands
+;UNB;brands
+;UOM;brands
+;URB;brands
+;VEN;brands
+;VER;brands
+;VIE;brands
+;VIN;brands
+;VIR;brands
+;VIS;brands
+;VOT;brands
+;WCO;brands
+;WET;brands
+;YUR;brands
+;ZEL;brands
+;ZIP;brands
+;ZIT;brands
+;ZOE;brands
 
-# Assign Product Samples to the Samples Category
+# Assign Product samples to the samples Category
 UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalogVersion
-;SAMPLE_OMO150;Samples, OMO
-;SAMPLE_NUX005;Samples, NUX
-;SAMPLE_KAU009;Samples, KAU
-;SAMPLE_OMO031;Samples, OMO
-;SAMPLE_KIK006;Samples, KIK
-;SAMPLE_TIL026_4.5;Samples, TIL
-;SAMPLE_DEM014;Samples, DEM
-;SAMPLE_CAU062;Samples, CAU
-;SAMPLE_JRO009;Samples, JRO
-#;SAMPLE_ROX001;Samples, ROX
-;SAMPLE_ECO014;Samples, ECO
-;SAMPLE_AES023;Samples, AES
-;SAMPLE_ODA018;Samples, ODA
-;SAMPLE_EMH012;Samples, EMH
-;SAMPLE_OSK009;Samples, OSK
-;SAMPLE_INN099;Samples, INN
-;SAMPLE_ALP004_7ML;Samples, ALP
-;SAMPLE_ALP114;Samples, ALP
-;SAMPLE_SDL003;Samples, SDL
-;SAMPLE_HOU033;Samples, HOU
-;SAMPLE_SRN010;Samples, SRN
-;SAMPLE_BYT003;Samples, BYT
-;SAMPLE_DAV028;Samples, DAV
-;SAMPLE_BCA067;Samples, BCA
-;SAMPLE_ZEL026;Samples, ZEL
-;SAMPLE_LVP003;Samples, LVP
-;SAMPLE_MIL097;Samples, MIL
-;SAMPLE_DCR003;Samples, DCR
-;SAMPLE_AUR098;Samples, AUR
-;SAMPLE_EVE021;Samples, EVE
-;SAMPLE_TAT101;Samples, TAT
-;SAMPLE_VEN003;Samples, VEN
-;SAMPLE_JOU001_Bronzed_1ml;Samples, JOU
-;SAMPLE_ECO015;Samples, ECO
-;SAMPLE_NAR103;Samples, NAR
-;SAMPLE_AUR017;Samples, AUR
-;SAMPLE_ITC096;Samples, ITC
-;SAMPLE_ECO001;Samples, ECO
-;SAMPLE_BEN079_123;Samples, BEN
-;SAMPLE_TIL219;Samples, TIL
-;SAMPLE_DAV008;Samples, DAV
-;SAMPLE_BEN034_0506;Samples, BEN
-;SAMPLE_PAI011;Samples, PAI
-;SAMPLE_BYT010_5_Peach_Beige;Samples, BYT
-;SAMPLE_AES016;Samples, AES
-;SAMPLE_MOA002;Samples, MOA
-;SAMPLE_ZEL021;Samples, ZEL
-;SAMPLE_CAU017;Samples, CAU
-;SAMPLE_AES002;Samples, AES
-;SAMPLE_AES004_;Samples, AES
-;SAMPLE_BCA045_MedTan;Samples, BCA
-;SAMPLE_ODA032;Samples, ODA
-;SAMPLE_BEN079_91112;Samples, BEN
-;SAMPLE_ERN023;Samples, ERN
-;SAMPLE_REN020;Samples, REN
-;SAMPLE_DBS012;Samples, DBS
-;SAMPLE_COV040_SOLEIL;Samples, COV
-;SAMPLE_COV028;Samples, COV
-;SAMPLE_TIL202;Samples, TIL
-;SAMPLE_CAU083;Samples, CAU
-;SAMPLE_DEO002_COCO;Samples, DEO
-;SAMPLE_OMO046;Samples, OMO
-;SAMPLE_MVO028;Samples, MVO
-;SAMPLE_BCA079;Samples, BCA
-;SAMPLE_SAC006;Samples, SAC
-;SAMPLE_ALP005_15ml;Samples, ALP
-;SAMPLE_TAT004;Samples, TAT
-;SAMPLE_SAC091;Samples, SAC
-;SAMPLE_LEO009;Samples, LEO
-;SAMPLE_TIL026_2;Samples, TIL
-;SAMPLE_TIL026_3;Samples, TIL
-;SAMPLE_TIL043;Samples, TIL
-;SAMPLE_LIM099_ROSE;Samples, LIM
-;SAMPLE_SAC073;Samples, SAC
-;SAMPLE_ECO004;Samples, ECO
-;SAMPLE_TAT020;Samples, TAT
-;SAMPLE_IST022_2ml;Samples, IST
-;SAMPLE_REN036;Samples, REN
-;SAMPLE_RHA020;Samples, RHA
-;SAMPLE_REN068;Samples, REN
-;SAMPLE_CAU018;Samples, CAU
-;SAMPLE_DRG004;Samples, DRG
-;SAMPLE_BRI057;Samples, BRI
-;SAMPLE_JOU103_FAIR;Samples, JOU
-;SAMPLE_BYT010_3_Cream_Beige;Samples, BYT
-;SAMPLE_EVE013;Samples, EVE
-;SAMPLE_VER009;Samples, VER
-;SAMPLE_UMA019;Samples, UMA
-;SAMPLE_KAU015;Samples, KAU
-;SAMPLE_LEO002;Samples, LEO
-;SAMPLE_NAT006;Samples, NAT
-;SAMPLE_AUR002_2ML;Samples, AUR
-;SAMPLE_ZEL004;Samples, ZEL
-;SAMPLE_EMH034;Samples, EMH
-;SAMPLE_DAV013;Samples, DAV
-;SAMPLE_SRN027;Samples, SRN
-;SAMPLE_ALP001_5ml;Samples, ALP
-;SAMPLE_PGY100;Samples, PGY
-;SAMPLE_DRG044;Samples, DRG
-;SAMPLE_DRU001;Samples, DRU
-;SAMPLE_TIL209;Samples, TIL
-;SAMPLE_REN078;Samples, REN
-;SAMPLE_TIL108;Samples, TIL
-;SAMPLE_SAC017;Samples, SAC
-;SAMPLE_AOS012;Samples, AOS
-;SAMPLE_SDL005;Samples, SDL
-#;SAMPLE_NOB007;Samples, NOB
-;SAMPLE_COV003;Samples, COV
-#;SAMPLE_RAO003;Samples, RAO
-;SAMPLE_OSK018;Samples, OSK
-;SAMPLE_RHA029;Samples, RHA
-;SAMPLE_ALG014;Samples, ALG
-;SAMPLE_IND021;Samples, IND
-;SAMPLE_OMO134;Samples, OMO
-;SAMPLE_VIR098;Samples, VIR
-;SAMPLE_UMA014;Samples, UMA
-;SAMPLE_SRN008_2ml;Samples, SRN
-#;SAMPLE_CAO005;Samples, CAO
-;SAMPLE_BEN014;Samples, BEN
-;SAMPLE_OMO057;Samples, OMO
-;SAMPLE_DAV014;Samples, DAV
-;SAMPLE_TOO043;Samples, TOO
-;SAMPLE_PLA099;Samples, PLA
-;SAMPLE_ODA017;Samples, ODA
-;SAMPLE_DAV006;Samples, DAV
-;SAMPLE_IND002;Samples, IND
-;SAMPLE_TAT036;Samples, TAT
-;SAMPLE_SDL011;Samples, SDL
-;SAMPLE_FAR006;Samples, FAR
-;SAMPLE_SAS001;Samples, SAS
-;SAMPLE_SKY019;Samples, SKY
-#;SAMPLE_NOB001;Samples, NOB
-;SAMPLE_COV039;Samples, COV
-;SAMPLE_BOT024;Samples, BOT
-;SAMPLE_ITC013;Samples, ITC
-;SAMPLE_PTR058;Samples, PTR
-;SAMPLE_KVA099;Samples, KVA
-;SAMPLE_BCA034;Samples, BCA
-;SAMPLE_ALP005_20ML;Samples, ALP
-;SAMPLE_KIK004;Samples, KIK
-;SAMPLE_BCA137;Samples, BCA
-;SAMPLE_EBY002_6ml;Samples, EBY
-;SAMPLE_OMO014_2ML;Samples, OMO
-;SAMPLE_OSK012;Samples, OSK
-;SAMPLE_GLD005;Samples, GLD
-;SAMPLE_DAV047;Samples, DAV
-;SAMPLE_VEN004;Samples, VEN
-;SAMPLE_OSK023;Samples, OSK
-;SAMPLE_OMO002_2ml;Samples, OMO
-;SAMPLE_ANA105;Samples, ANA
-;SAMPLE_AUR004;Samples, AUR
-;SAMPLE_SAT009;Samples, SAT
-;SAMPLE_TIL022_FAIR4;Samples, TIL
-;SAMPLE_ALP044;Samples, ALP
-;SAMPLE_OMO114;Samples, OMO
-;SAMPLE_VER002;Samples, VER
-;SAMPLE_LIM099_VLNTNE;Samples, LIM
-;SAMPLE_DAV003;Samples, DAV
-;SAMPLE_EMH021;Samples, EMH
-;SAMPLE_AES057;Samples, AES
-;SAMPLE_SAC019;Samples, SAC
-;SAMPLE_DRG024;Samples, DRG
-;SAMPLE_AES013;Samples, AES
-;SAMPLE_OMO121;Samples, OMO
-;SAMPLE_DAV035;Samples, DAV
-;SAMPLE_REN004;Samples, REN
-;SAMPLE_EMH020;Samples, EMH
-;SAMPLE_EVE004;Samples, EVE
-;SAMPLE_KAU012;Samples, KAU
-;SAMPLE_OMO001_2ml;Samples, OMO
-;SAMPLE_ODA030;Samples, ODA
-;SAMPLE_BBL006_Liquid_Blender_Cleanser;Samples, BBL
-;SAMPLE_ODA035;Samples, ODA
-;SAMPLE_ALG007;Samples, ALG
-;SAMPLE_JOU017_Beige_Nat;Samples, JOU
-;SAMPLE_BEN002_03;Samples, BEN
-;SAMPLE_OSK014;Samples, OSK
-;SAMPLE_HOU052;Samples, HOU
-;SAMPLE_AES032;Samples, AES
-;SAMPLE_DRU096;Samples, DRU
-;SAMPLE_DAR003;Samples, DAR
-;SAMPLE_TIL206;Samples, TIL
-;SAMPLE_BEN002_01;Samples, BEN
-;SAMPLE_LIM099_NEON;Samples, LIM
-#;SAMPLE_TIS004;Samples, TIS
-;SAMPLE_REN066;Samples, REN
-;SAMPLE_AES046;Samples, AES
-;SAMPLE_PTR082;Samples, PTR
-;SAMPLE_KAI018;Samples, KAI
-;SAMPLE_BYT010_7_Vanilla_Beige;Samples, BYT
-;SAMPLE_PAI008;Samples, PAI
-;SAMPLE_BYT199;Samples, BYT
-;SAMPLE_CAU010_1ml;Samples, CAU
-;SAMPLE_TIL026_8;Samples, TIL
-;SAMPLE_DRG033_15ml;Samples, DRG
-;SAMPLE_GLD002_5ML;Samples, GLD
-;SAMPLE_PTR100;Samples, PTR
-;SAMPLE_OMO101_OMO101;Samples, OMO
-;SAMPLE_ODA039;Samples, ODA
-;SAMPLE_TOO035;Samples, TOO
-;SAMPLE_PIX035;Samples, PIX
-#;SAMPLE_VTL027;Samples, VTL
-;SAMPLE_ITC060;Samples, ITC
-;SAMPLE_DRG022_Light_Med;Samples, DRG
-;SAMPLE_PTR026;Samples, PTR
-;SAMPLE_DRG013;Samples, DRG
-;SAMPLE_PAI010;Samples, PAI
-;SAMPLE_MGO013;Samples, MGO
-#;SAMPLE2_DRU004;Samples, SAM
-;SAMPLE_DRG014;Samples, DRG
-;SAMPLE_AUR099;Samples, AUR
-;SAMPLE_TBC001;Samples, TBC
-;SAMPLE_BRI005;Samples, BRI
-# SAMPLE_NOB019;Samples, NOB
-;SAMPLE_ALG025;Samples, ALG
-;SAMPLE_ALP016_5ml;Samples, ALP
-;SAMPLE_ROE001;Samples, ROE
-;SAMPLE_OSK007;Samples, OSK
-;SAMPLE_OMO017;Samples, OMO
-;SAMPLE_SAC024;Samples, SAC
-;SAMPLE_ALG003_2;Samples, ALG
-;SAMPLE_ALP016_7ML;Samples, ALP
-;SAMPLE_BAX016;Samples, BAX
-;SAMPLE_KAI001_2ml;Samples, KAI
-;SAMPLE_LEO001;Samples, LEO
-;SAMPLE_COV051;Samples, COV
-;SAMPLE_VER004;Samples, VER
-;SAMPLE_LVP006;Samples, LVP
-;SAMPLE_LVP001DUO;Samples, LVP
-;SAMPLE_SRN044;Samples, SRN
-;SAMPLE_BAX007;Samples, BAX
-;SAMPLE_GLD006_5ML;Samples, GLD
-;SAMPLE_COV001;Samples, COV
-;SAMPLE_ALP003;Samples, ALP
-;SAMPLE_BYT023_5_Peach_Beige;Samples, BYT
-;SAMPLE_TAT009;Samples, TAT
-;SAMPLE_CAU092;Samples, CAU
-;SAMPLE_SRN059;Samples, SRN
-;SAMPLE_JOU017_Porcelain;Samples, JOU
-;SAMPLE_SAC012;Samples, SAC
-;SAMPLE_CAU016;Samples, CAU
-;SAMPLE_AES017_1.5ml;Samples, AES
-;SAMPLE_LEV013;Samples, LEV
-;SAMPLE_HOU055;Samples, HOU
-;SAMPLE_LEO004;Samples, LEO
-;SAMPLE_JOU001_Caramel;Samples, JOU
-;SAMPLE_RHA018;Samples, RHA
-;SAMPLE_SAC004;Samples, SAC
-;SAMPLE_FAR003;Samples, FAR
-;SAMPLE_SRN007_2ml;Samples, SRN
-#;SAMPLE_NOB021;Samples, NOB
-;SAMPLE_LEO008;Samples, LEO
-;SAMPLE_KIK012;Samples, KIK
-;SAMPLE_SRN037;Samples, SRN
-;SAMPLE_ZEL002;Samples, ZEL
-;SAMPLE_LEL004;Samples, LEL
-;SAMPLE_SAC018;Samples, SAC
-;SAMPLE_TAT039;Samples, TAT
-;SAMPLE_BYT196;Samples, BYT
-;SAMPLE_BBL006;Samples, BBL
-;SAMPLE_SRN004_2ml;Samples, SRN
-;SAMPLE_KSV008;Samples, KSV
-;SAMPLE_DAV034;Samples, DAV
-;SAMPLE_EMH014;Samples, EMH
-#;SAMPLE___PTR031___PTR031;Samples, __P
-;SAMPLE_FRE005;Samples, FRE
-;SAMPLE_DAV019;Samples, DAV
-;SAMPLE_RJU002;Samples, RJU
-;SAMPLE_ERN008;Samples, ERN
-;SAMPLE_MIL099;Samples, MIL
-;SAMPLE_SAC032;Samples, SAC
-;SAMPLE_KAI003;Samples, KAI
-;SAMPLE_OMO005_2ml;Samples, OMO
-;SAMPLE_TAT005;Samples, TAT
-#;SAMPLE_GEL002;Samples, GEL
-;SAMPLE_AES021;Samples, AES
-;SAMPLE_SRN001_2ml;Samples, SRN
-;SAMPLE_BRI017;Samples, BRI
-;SAMPLE_ALP017;Samples, ALP
-;SAMPLE_TIL217;Samples, TIL
-;SAMPLE_SRN042;Samples, SRN
-;SAMPLE_VER005;Samples, VER
-;SAMPLE_IND023;Samples, IND
-;SAMPLE_LEO012;Samples, LEO
-;SAMPLE_ZEL018;Samples, ZEL
-;SAMPLE_ALP013_15ml;Samples, ALP
-;SAMPLE_FRE001;Samples, FRE
-;SAMPLE_JOU103_DEEPS;Samples, JOU
-;SAMPLE_JOU001_Pearl_1ml;Samples, JOU
-;SAMPLE_ODA006;Samples, ODA
-;SAMPLE_DRG031;Samples, DRG
-;SAMPLE_PTR013;Samples, PTR
-;SAMPLE_SKY005;Samples, SKY
-;SAMPLE_TAT001;Samples, TAT
-;SAMPLE_UMA005_1OZ;Samples, UMA
-;SAMPLE_JOU001_Golden_1ml;Samples, JOU
-;SAMPLE_SAC008;Samples, SAC
-#;SAMPLE_PHB028;Samples, PHB
-;SAMPLE_ERN009;Samples, ERN
-;SAMPLE_DCR005;Samples, DCR
-;SAMPLE_SRN005_2ml;Samples, SRN
-;SAMPLE_GLD004;Samples, GLD
-;SAMPLE_SAT002;Samples, SAT
-;SAMPLE_TIL212;Samples, TIL
-;SAMPLE_SAC029;Samples, SAC
-;SAMPLE_DCR004;Samples, DCR
-;SAMPLE_KIN099;Samples, KIN
-;SAMPLE_BAB005lotion;Samples, BAB
-;SAMPLE_BEN034_0102;Samples, BEN
-;SAMPLE_BYT198;Samples, BYT
-;SAMPLE_AUR003_4ML;Samples, AUR
-;SAMPLE_DBS009;Samples, DBS
-;SAMPLE_TIL022_FAIR3;Samples, TIL
-;SAMPLE_JOU013;Samples, JOU
-;SAMPLE_EVE001;Samples, EVE
-;SAMPLE_DRU095;Samples, DRU
-;SAMPLE_BRI013;Samples, BRI
-;SAMPLE_BEN075;Samples, BEN
-;SAMPLE_SKY028;Samples, SKY
-;SAMPLE_TIL026_1;Samples, TIL
-;SAMPLE_ZEL028.X;Samples, ZEL
-#;SAMPLE__ODA032;Samples, _OD
-;SAMPLE_BBL037_3ML;Samples, BBL
-;SAMPLE_RHA027;Samples, RHA
-;SAMPLE_REN035;Samples, REN
-;SAMPLE_PAI007;Samples, PAI
-;SAMPLE_TOO008;Samples, TOO
-;SAMPLE_DRG001;Samples, DRG
-;SAMPLE_BEN098_DELUXE01;Samples, BEN
-;SAMPLE_TIL026_5;Samples, TIL
-;SAMPLE_KAU007;Samples, KAU
-;SAMPLE_VER003_2ml;Samples, VER
-;SAMPLE_LIV015;Samples, LIV
-;SAMPLE_DRG028_INTENSE;Samples, DRG
-;SAMPLE_AUR002;Samples, AUR
-;SAMPLE_BCA053;Samples, BCA
-;SAMPLE_ALG003;Samples, ALG
-;SAMPLE_CAU012;Samples, CAU
-;SAMPLE_AES006_1.5ml;Samples, AES
-;SAMPLE_KSV003;Samples, KSV
-;SAMPLE_MGO003;Samples, MGO
-;SAMPLE_OMO006_2ML;Samples, OMO
-;SAMPLE_BCA037NUDETAN;Samples, BCA
-;SAMPLE_ODA076;Samples, ODA
-#;SAMPLE_NOB031;Samples, NOB
-;SAMPLE_AUR005;Samples, AUR
-;SAMPLE_KAU014;Samples, KAU
-;SAMPLE_TCF014;Samples, TCF
-;SAMPLE_AES058;Samples, AES
-;SAMPLE_ODA015;Samples, ODA
-;SAMPLE_BCA045_6ml;Samples, BCA
-;SAMPLE_TIL220;Samples, TIL
-;SAMPLE_BEN041_01;Samples, BEN
-;SAMPLE_JOU017_Hazel;Samples, JOU
-;SAMPLE_AES038;Samples, AES
-;SAMPLE_UMA022;Samples, UMA
-;SAMPLE_LVP008;Samples, LVP
-;SAMPLE_DRU099;Samples, DRU
-#;SAMPLE15ML_ALP016;Samples, SAM
-#;SAMPLE_VTL021;Samples, VTL
-;SAMPLE_TIL046;Samples, TIL
-;SAMPLE_SRN004;Samples, SRN
-;SAMPLE_RHA002;Samples, RHA
-;SAMPLE_COO014;Samples, COO
-;SAMPLE_OMO100;Samples, OMO
-;SAMPLE_OMO013_2ML;Samples, OMO
-;SAMPLE_TOO024;Samples, TOO
-;SAMPLE_VIR099;Samples, VIR
-;SAMPLE_EMH028;Samples, EMH
-;SAMPLE_IST034_2.3ml;Samples, IST
-;SAMPLE_SAC030;Samples, SAC
-;SAMPLE_DRG015;Samples, DRG
-;SAMPLE_ZEL029;Samples, ZEL
-;SAMPLE_PAI001;Samples, PAI
-;SAMPLE_DAR004;Samples, DAR
-;SAMPLE_ZEL027;Samples, ZEL
-;SAMPLE_BCA037_MultiShade;Samples, BCA
-;SAMPLE_OSK006_2ml;Samples, OSK
-;SAMPLE_SAC003;Samples, SAC
-;SAMPLE_LVP019;Samples, LVP
-;SAMPLE_OMO019;Samples, OMO
-;SAMPLE_OMO066;Samples, OMO
-;SAMPLE_COO001;Samples, COO
-;SAMPLE_LVP002;Samples, LVP
-;SAMPLE_CAU097;Samples, CAU
-;SAMPLE_CAU027;Samples, CAU
-;SAMPLE_AES028_1.5ml;Samples, AES
-;SAMPLE_ALG004;Samples, ALG
-;SAMPLE_IST031;Samples, IST
-#;SAMPLET_PAI010;Samples, SAM
-;SAMPLE_AES008_1.5ml;Samples, AES
-;SAMPLE_BRI018;Samples, BRI
-;SAMPLE_TCF015;Samples, TCF
-;SAMPLE_IST012;Samples, IST
-;SAMPLE_TIL208;Samples, TIL
-;SAMPLE_BRI056;Samples, BRI
-;SAMPLE_REN056;Samples, REN
-;SAMPLE_BEN058;Samples, BEN
-;SAMPLE_ITC098;Samples, ITC
-;SAMPLE_MAM004;Samples, MAM
-;SAMPLE_GLO004;Samples, GLO
-;SAMPLE_HUD089;Samples, HUD
-;SAMPLE_TAT090;Samples, TAT
-#;SAMPLE_GEL010;Samples, GEL
-;SAMPLE_REN015;Samples, REN
-;SAMPLE_BCA037_FairLight;Samples, BCA
-;SAMPLE_TAT047;Samples, TAT
-;SAMPLE_GLD003;Samples, GLD
-;SAMPLE_KSV012;Samples, KSV
-;SAMPLE_OSK008;Samples, OSK
-;SAMPLE_DRG036;Samples, DRG
-;SAMPLE_TIL218;Samples, TIL
-;SAMPLE_LAN051;Samples, LAN
-;SAMPLE_ODA011;Samples, ODA
-;SAMPLE_ALP011_7.5ml;Samples, ALP
-;SAMPLE_LVP012;Samples, LVP
-;SAMPLE_SAC025;Samples, SAC
-;SAMPLE_LEO010;Samples, LEO
-;SAMPLE_CAU061;Samples, CAU
-;SAMPLE_ALP106;Samples, ALP
-;SAMPLE_OMO030;Samples, OMO
-;SAMPLE_IST020;Samples, IST
-;SAMPLE_VIR097;Samples, VIR
-;SAMPLE_JRO006;Samples, JRO
-;SAMPLE_PTR049;Samples, PTR
-#;SAMPLE_REG001;Samples, REG
-;SAMPLE_TIL216;Samples, TIL
-;SAMPLE_LVP011;Samples, LVP
-;SAMPLE_AES018;Samples, AES
-;SAMPLE_DBS002;Samples, DBS
-;SAMPLE_BAB021;Samples, BAB
-;SAMPLE_AES027;Samples, AES
-;SAMPLE_VOT011;Samples, VOT
-;SAMPLE_SAC016;Samples, SAC
-;SAMPLE_AUR003;Samples, AUR
-;SAMPLE_REN022;Samples, REN
-;SAMPLE_CAU009;Samples, CAU
-;SAMPLE_DCR001;Samples, DCR
-;SAMPLE_AES010;Samples, AES
-;SAMPLE_BRI012;Samples, BRI
-;SAMPLE_ALP016;Samples, ALP
-;SAMPLE_KAU005;Samples, KAU
-;SAMPLE_JOU035;Samples, JOU
-;SAMPLE_OMO034;Samples, OMO
-;SAMPLE_AES022_1.5ml;Samples, AES
-;SAMPLE_TAT013;Samples, TAT
-;SAMPLE_SAT008;Samples, SAT
-;SAMPLE_ECO018;Samples, ECO
-;SAMPLE_EMH005;Samples, EMH
-;SAMPLE_TAT002;Samples, TAT
-;SAMPLE_NUX001;Samples, NUX
-;SAMPLE_JOU017_Nude_Tube;Samples, JOU
-;SAMPLE_KSV019;Samples, KSV
-;SAMPLE_PHI006;Samples, PHI
-;SAMPLE_OMO040;Samples, OMO
-;SAMPLE_REN111;Samples, REN
-;SAMPLE_ODA034;Samples, ODA
-;SAMPLE_REN017_5ml;Samples, REN
-;SAMPLE_TCF012;Samples, TCF
-;SAMPLE_ALP012;Samples, ALP
-;SAMPLE_OMO015_2ML;Samples, OMO
-;SAMPLE_TAT028_Sweet;Samples, TAT
-;SAMPLE_IND005;Samples, IND
-;SAMPLE_LEO011;Samples, LEO
-;SAMPLE_TIL022_FAIR5;Samples, TIL
-;SAMPLE_ODA007;Samples, ODA
-;SAMPLE_OMO099;Samples, OMO
-;SAMPLE_TAT017;Samples, TAT
-;SAMPLE_DCR006;Samples, DCR
-;SAMPLE_ODA012;Samples, ODA
-;SAMPLE_OSK001;Samples, OSK
-;SAMPLE_BCA099;Samples, BCA
-;SAMPLE_PGY099;Samples, PGY
-;SAMPLE_OMO003;Samples, OMO
-;SAMPLE_DCR010;Samples, DCR
-;SAMPLE_EMH046;Samples, EMH
-;SAMPLE_CAU005;Samples, CAU
-;SAMPLE_VOT023;Samples, VOT
-;SAMPLE_KIK002;Samples, KIK
-;SAMPLE_DAK017;Samples, DAK
-;SAMPLE_NUX009;Samples, NUX
-;SAMPLE_DBS001;Samples, DBS
-;SAMPLE_TIL201;Samples, TIL
-;SAMPLE_PFL001;Samples, PFL
-;SAMPLE_IST034_7ml;Samples, IST
-;SAMPLE_ZIT001;Samples, ZIT
-;SAMPLE_TIL026_7;Samples, TIL
-;SAMPLE_LIM099_LEELOO;Samples, LIM
-;SAMPLE_HUD107;Samples, HUD
-;SAMPLE_MVO005;Samples, MVO
-;SAMPLE_AES009;Samples, AES
-;SAMPLE_DAK004;Samples, DAK
-;SAMPLE_JOU001_Opal_1ml;Samples, JOU
-;SAMPLE_AES040;Samples, AES
-;SAMPLE_DAK008;Samples, DAK
-;SAMPLE_AES007_1ml;Samples, AES
-;SAMPLE_DAK007;Samples, DAK
-;SAMPLE_PTR080;Samples, PTR
-;SAMPLE_KAU008;Samples, KAU
-;SAMPLE_BCA054;Samples, BCA
-;SAMPLE_UMA013;Samples, UMA
-;SAMPLE_KVM028;Samples, KVM
-;SAMPLE_KIK003;Samples, KIK
-;SAMPLE_PIX011;Samples, PIX
-#;SAMPLE_GIN001;Samples, GIN
-;SAMPLE_NUX010;Samples, NUX
-;SAMPLE_SDJ004;Samples, SDJ
-;SAMPLE_DAV004;Samples, DAV
-;SAMPLE_GLD018;Samples, GLD
-;SAMPLE_ALP015_5ml;Samples, ALP
-;SAMPLE_ODA023;Samples, ODA
-#;SAMPLE_NOB051;Samples, NOB
-;SAMPLE_CAU028;Samples, CAU
-;SAMPLE_DAV033;Samples, DAV
-;SAMPLE_BAX015;Samples, BAX
-;SAMPLE_OSK006_5ml;Samples, OSK
-;SAMPLE_AES020;Samples, AES
-;SAMPLE_CAE001;Samples, CAE
-;SAMPLE_NAR005;Samples, NAR
-;SAMPLE_AES039;Samples, AES
-;SAMPLE_DRG023;Samples, DRG
-;SAMPLE_LVP028;Samples, LVP
-;SAMPLE_EMH040;Samples, EMH
-;SAMPLE_IOP002;Samples, IOP
-;SAMPLE_BCA029;Samples, BCA
-;SAMPLE_LEO005;Samples, LEO
-;SAMPLE_OMO011_2ML;Samples, OMO
-;SAMPLE_DRG011;Samples, DRG
-#;SAMPLE___CAU019;Samples, __C
-;SAMPLE_ALG023;Samples, ALG
-;SAMPLE_TIL043_1.5;Samples, TIL
-;SAMPLE_PTR042;Samples, PTR
-;SAMPLE_CAU057;Samples, CAU
-;SAMPLE_AUR001;Samples, AUR
-;SAMPLE_AES001;Samples, AES
-;SAMPLE_JOU001_Blush;Samples, JOU
-;SAMPLE_ALG026;Samples, ALG
-;SAMPLE_ODA009;Samples, ODA
-;SAMPLE_DRG042;Samples, DRG
-;SAMPLE_SRN009_2ml;Samples, SRN
-;SAMPLE_MGO002;Samples, MGO
-;SAMPLE_BYT023_2_Apricot_Light;Samples, BYT
-;SAMPLE_OSK003_5ml;Samples, OSK
-;SAMPLE_LEL001;Samples, LEL
-;SAMPLE_DBS010;Samples, DBS
-;SAMPLE_TIL221;Samples, TIL
-;SAMPLE_BAB004;Samples, BAB
-;SAMPLE_KAU006;Samples, KAU
-;SAMPLE_ODA014;Samples, ODA
-;SAMPLE_OMO022;Samples, OMO
-;SAMPLE_DRU097;Samples, DRU
-;SAMPLE_KAU030;Samples, KAU
-;SAMPLE_LXR002;Samples, LXR
-;SAMPLE_PHI025;Samples, PHI
-;SAMPLE_DRG002;Samples, DRG
-;SAMPLE_PAI006;Samples, PAI
-;SAMPLE_DRG038;Samples, DRG
-;SAMPLE_AES005_1ml;Samples, AES
-;SAMPLE_CAU021;Samples, CAU
-;SAMPLE_BEN098_DELUXE02;Samples, BEN
-;SAMPLE_RHA008;Samples, RHA
-;SAMPLE_BEN041_02;Samples, BEN
-;SAMPLE_KAI019;Samples, KAI
-;SAMPLE_CAU079;Samples, CAU
-;SAMPLE_CAU002_2ML;Samples, CAU
-;SAMPLE_BCA025;Samples, BCA
-;SAMPLE_EVE029;Samples, EVE
-;SAMPLE_DAK013;Samples, DAK
-;SAMPLE_IST042;Samples, IST
-;SAMPLE_DRU098;Samples, DRU
-;SAMPLE_BCA138;Samples, BCA
-;SAMPLE_BUX021;Samples, BUX
-;SAMPLE_REN048;Samples, REN
-;SAMPLE_HOU033_DELUXE;Samples, HOU
-;SAMPLE_ALG022;Samples, ALG
-;SAMPLE_ODA003;Samples, ODA
-;SAMPLE_REN018_5ML;Samples, REN
-;SAMPLE_TIL210;Samples, TIL
-;SAMPLE_OMO033;Samples, OMO
-;SAMPLE_MGO022;Samples, MGO
-;SAMPLE_KIK014;Samples, KIK
-;SAMPLE_DAV036;Samples, DAV
-;SAMPLE_DRG027;Samples, DRG
-;SAMPLE_IST001_2ml;Samples, IST
-;SAMPLE_DAV020;Samples, DAV
-;SAMPLE_DAK005;Samples, DAK
-;SAMPLE_SAC023;Samples, SAC
-;SAMPLE_SKY007_;Samples, SKY
-;SAMPLE_ALP007_15ml;Samples, ALP
-;SAMPLE_ODA036;Samples, ODA
-;SAMPLE_TAT007;Samples, TAT
-;SAMPLE_ALP001;Samples, ALP
-;SAMPLE_CAU033;Samples, CAU
-;SAMPLE_ODA004;Samples, ODA
-;SAMPLE_OSK028;Samples, OSK
-;SAMPLE_BRI008;Samples, BRI
-;SAMPLE_TAT018;Samples, TAT
-;SAMPLE_BEN041_03;Samples, BEN
-;SAMPLE_ALP014_12g;Samples, ALP
-;SAMPLE_DRG006Serum;Samples, DRG
-;SAMPLE_DRG029;Samples, DRG
-;SAMPLE_TIL022_MED6;Samples, TIL
-;SAMPLE_DRG033_2ML_;Samples, DRG
-;SAMPLE_LXR003;Samples, LXR
-;SAMPLE_ALP019_4ml;Samples, ALP
-;SAMPLE_CAU110;Samples, CAU
-;SAMPLE_KSV007;Samples, KSV
-#;SAMPLE15ML_DRG042;Samples, SAM
-;SAMPLE_WCO002;Samples, WCO
-;SAMPLE_TOO040;Samples, TOO
-;SAMPLE_LXR001;Samples, LXR
-;SAMPLE_DAK031;Samples, DAK
-;SAMPLE_PAI012;Samples, PAI
-;SAMPLE_KIN003;Samples, KIN
-;SAMPLE_MIL098;Samples, MIL
-;SAMPLE_BEN079_456;Samples, BEN
-;SAMPLE_SAC082;Samples, SAC
-;SAMPLE_AOS013;Samples, AOS
-;SAMPLE_TIL207;Samples, TIL
-;SAMPLE_ECO008;Samples, ECO
-#;SAMPLE__ZEL003__ZEL003;Samples, _ZE
-;SAMPLE_SAS001_5ML;Samples, SAS
-;SAMPLE_VER003;Samples, VER
-;SAMPLE_LEO013;Samples, LEO
-;SAMPLE_OMO089;Samples, OMO
-;SAMPLE_TIL084;Samples, TIL
-;SAMPLE_TIL203;Samples, TIL
-;SAMPLE_TAT010;Samples, TAT
-;SAMPLE_CAU002_1ML;Samples, CAU
-;SAMPLE_VIN001;Samples, VIN
-;SAMPLE_ODA031;Samples, ODA
-;SAMPLE_BRI001;Samples, BRI
-;SAMPLE_ALP125;Samples, ALP
-;SAMPLE_DAK020;Samples, DAK
-;SAMPLE_ALP004_5ML;Samples, ALP
-;SAMPLE_ECO006;Samples, ECO
-;SAMPLE_TIL204;Samples, TIL
-;SAMPLE_DEO002_PEAR;Samples, DEO
-;SAMPLE_GLD002;Samples, GLD
-;SAMPLE_LVP013;Samples, LVP
-;SAMPLE_BCA045;Samples, BCA
-;SAMPLE_TIL026_9;Samples, TIL
-;SAMPLE_BRI055;Samples, BRI
-;SAMPLE_TAT023;Samples, TAT
-;SAMPLE_PHI012;Samples, PHI
-;SAMPLE_COV097;Samples, COV
-;SAMPLE_LIM099_BUNNY;Samples, LIM
-;SAMPLE_ODA010;Samples, ODA
-;SAMPLE_RHA001_DUO;Samples, RHA
-;SAMPLE_AES019;Samples, AES
-;SAMPLE_CAU055;Samples, CAU
-;SAMPLE_TIL028_SOMARY;Samples, TIL
-;SAMPLE_KAU019;Samples, KAU
-;SAMPLE_JOU017_Nude;Samples, JOU
-;SAMPLE_CAU006_3ml;Samples, CAU
-;SAMPLE_RHA028;Samples, RHA
-;SAMPLE_BOT019;Samples, BOT
-#;SAMPLE15ML_ALP004;Samples, SAM
-;SAMPLE_TIL215;Samples, TIL
-;SAMPLE_AES012;Samples, AES
-;SAMPLE_PGY001;Samples, PGY
-;SAMPLE_REN021;Samples, REN
-;SAMPLE_IND001;Samples, IND
-;SAMPLE_IND019;Samples, IND
-;SAMPLE_LIM099_SEXT;Samples, LIM
-;SAMPLE_IST013;Samples, IST
-;SAMPLE_AES017Cream;Samples, AES
-;SAMPLE_BAX020;Samples, BAX
-;SAMPLE_DAK002;Samples, DAK
-;SAMPLE_DRG010;Samples, DRG
-;SAMPLE_GLD006;Samples, GLD
-;SAMPLE_DAK032;Samples, DAK
-;SAMPLE_HUD039;Samples, HUD
-;SAMPLE_BBL006_Mini_Solid_Cleanser;Samples, BBL
-;SAMPLE_RJU001;Samples, RJU
-;SAMPLE_ALP003_7.5ml;Samples, ALP
-;SAMPLE_CAU084;Samples, CAU
-;SAMPLE_BEN038_05;Samples, BEN
-;SAMPLE_REN064;Samples, REN
-;SAMPLE_DRG007;Samples, DRG
-;SAMPLE_TIL026_4;Samples, TIL
-;SAMPLE_RHA003;Samples, RHA
-;SAMPLE_ZEL008;Samples, ZEL
-;SAMPLE_DBS015;Samples, DBS
-;SAMPLE_DAV007;Samples, DAV
-;SAMPLE_SAT010;Samples, SAT
-;SAMPLE_ITC097;Samples, ITC
-;SAMPLE_ERN030;Samples, ERN
-;SAMPLE_TIL214;Samples, TIL
-;SAMPLE_JOU017_Beige_Rose;Samples, JOU
-;SAMPLE_MAR001;Samples, MAR
-;SAMPLE_HUD059;Samples, HUD
-;SAMPLE_COV014;Samples, COV
-;SAMPLE_SAMPLE_COO017;Samples, COO
-;SAMPLE_OMO032;Samples, OMO
-;SAMPLE_BCA086_Duo;Samples, BCA
-;SAMPLE_BEN036;Samples, BEN
-;SAMPLE_MOA001;Samples, MOA
-;SAMPLE_TCF011;Samples, TCF
-;SAMPLE_VOT005;Samples, VOT
-;SAMPLE_TAT008;Samples, TAT
-#;SAMPLE_MMA004;Samples, MMA
-;SAMPLE_TAT014;Samples, TAT
-;SAMPLE_REN003;Samples, REN
-;SAMPLE_CAU002;Samples, CAU
-;SAMPLE_JRO010;Samples, JRO
-;SAMPLE_OMO148;Samples, OMO
-;SAMPLE_ALG005;Samples, ALG
-;SAMPLE_REN101;Samples, REN
-;SAMPLE_CAU008/;Samples, CAU
-;SAMPLE_AOS002;Samples, AOS
-;SAMPLE_EVE075;Samples, EVE
-;SAMPLE_DAV027;Samples, DAV
-;SAMPLE_AOS001;Samples, AOS
-;SAMPLE_REN017;Samples, REN
-;SAMPLE_OMO009_2ml;Samples, OMO
-;SAMPLE_HOU069;Samples, HOU
-;SAMPLE_LVP005;Samples, LVP
-#;SAMPLE_VTL010_OpaqueLatte;Samples, VTL
-;SAMPLE_OMO024;Samples, OMO
-;SAMPLE_PAI004;Samples, PAI
-;SAMPLE_ALG009;Samples, ALG
-;SAMPLE_JOU012;Samples, JOU
-;SAMPLE_OSK011_;Samples, OSK
-;SAMPLE_EVE005_5ML;Samples, EVE
-;SAMPLE_JOU017_Chamomile;Samples, JOU
-;SAMPLE_DAV032;Samples, DAV
-;SAMPLE_RHA006;Samples, RHA
-;SAMPLE_FRE058;Samples, FRE
-;SAMPLE_REN016;Samples, REN
-;SAMPLE_EMH001;Samples, EMH
-;SAMPLE_SKY001;Samples, SKY
-#;SAMPLE_VTL017;Samples, VTL
-#;SAMPLE_NOB050;Samples, NOB
-;SAMPLE_TAN001;Samples, TAN
-;SAMPLE_DAK010;Samples, DAK
-#;SAMPLE_RAO005;Samples, RAO
-;SAMPLE_ZEL028;Samples, ZEL
-;SAMPLE_TCF020;Samples, TCF
-;SAMPLE_REN017_2ml;Samples, REN
-;SAMPLE_ZEL007;Samples, ZEL
-;SAMPLE_TAT035;Samples, TAT
-;SAMPLE_CAU024;Samples, CAU
-;SAMPLE_KAU018;Samples, KAU
-;SAMPLE_BEN199;Samples, BEN
-;SAMPLE_SAC092;Samples, SAC
-;SAMPLE_DRG037;Samples, DRG
-;SAMPLE_ALP066;Samples, ALP
-;SAMPLE_LVP001;Samples, LVP
-;SAMPLE_REN013;Samples, REN
-;SAMPLE_TAT028_Vivacious;Samples, TAT
-;SAMPLE_LEO007;Samples, LEO
-;SAMPLE_ALP010;Samples, ALP
-;SAMPLE_KVA017;Samples, KVA
-;SAMPLE_BYT197;Samples, BYT
-;SAMPLE_LEO003;Samples, LEO
-;SAMPLE_JOU001_DeepBronzed;Samples, JOU
-;SAMPLE_BEN002_02;Samples, BEN
-;SAMPLE_LIM099_CHOCCH;Samples, LIM
-;SAMPLE_DRU006;Samples, DRU
-;SAMPLE_ODA001;Samples, ODA
-;SAMPLE_TIL026_10;Samples, TIL
-;SAMPLE_FRE008;Samples, FRE
-;SAMPLE_IST014;Samples, IST
-;SAMPLE_CAU013;Samples, CAU
-;SAMPLE_BEN025;Samples, BEN
-;SAMPLE_VER005_7ML;Samples, VER
-;SAMPLE_TIL043_DELUXE;Samples, TIL
-;SAMPLE_LVP015;Samples, LVP
-;SAMPLE_TAT003;Samples, TAT
-;SAMPLE_TIL026_12;Samples, TIL
-;SAMPLE_PTR020;Samples, PTR
-;SAMPLE_TIL022_MED5;Samples, TIL
-;SAMPLE_OMO028;Samples, OMO
-;SAMPLE_EVE002;Samples, EVE
-;SAMPLE_SAC081;Samples, SAC
-;SAMPLE_CAE001_30ML;Samples, CAE
-;SAMPLE_DRG015_5ml;Samples, DRG
-;SAMPLE_OMO009;Samples, OMO
-;SAMPLE_REN084;Samples, REN
-;SAMPLE_OMO067;Samples, OMO
-;SAMPLE_DRU094;Samples, DRU
-;SAMPLE_UMA005;Samples, UMA
-;SAMPLE_PLA100;Samples, PLA
-;SAMPLE_TIL205;Samples, TIL
-;SAMPLE_SRN002_2ml;Samples, SRN
-;SAMPLE_OSK016;Samples, OSK
-;SAMPLE_OMO027;Samples, OMO
-;SAMPLE_IST009;Samples, IST
-;SAMPLE_REN038_2ml;Samples, REN
-;SAMPLE_ODA005;Samples, ODA
-#;SAMPLE_Resveratrol_Lift_Eye_Lifting_Balm;Samples, Res
-;SAMPLE_ODA074;Samples, ODA
-;SAMPLE_OMO017_2ML;Samples, OMO
-;SAMPLE_TIL061_KIMKW;Samples, TIL
-;SAMPLE_ODA008;Samples, ODA
-;SAMPLE_ODA029;Samples, ODA
-;SAMPLE_JOU036;Samples, JOU
-;SAMPLE_REN008;Samples, REN
-#;SAMPLE_NOB008;Samples, NOB
-;SAMPLE_BOT002;Samples, BOT
-;SAMPLE_MAM005;Samples, MAM
-;SAMPLE_ECO005;Samples, ECO
-;SAMPLE_DRG032;Samples, DRG
-;SAMPLE_JOU001_Glow_1ml;Samples, JOU
-;SAMPLE_CAU058;Samples, CAU
-;SAMPLE_DRU011;Samples, DRU
-;SAMPLE_DRG003;Samples, DRG
-;SAMPLE_OMO128;Samples, OMO
-;SAMPLE_ZEL006;Samples, ZEL
-;SAMPLE_GLO002;Samples, GLO
-;SAMPLE_FPJ014;Samples, FPJ
-;SAMPLE_NUE011;Samples, NUE
-;SAMPLE_SAC083;Samples, SAC
-;SAMPLE_JRO008;Samples, JRO
-;SAMPLE_TIL211;Samples, TIL
-;SAMPLE_BYT010_2_Neutral_Beige;Samples, BYT
-;SAMPLE_DRG022_Med_Deep;Samples, DRG
-;SAMPLE_DRU004;Samples, DRU
-;SAMPLE_PAI019;Samples, PAI
-;SAMPLE_TIL213;Samples, TIL
-;SAMPLE_OMO017_Medium;Samples, OMO
-;SAMPLE_DRU002;Samples, DRU
-;SAMPLE_EVE032;Samples, EVE
-;SAMPLE_EBY001;Samples, EBY
-;SAMPLE_ODA013;Samples, ODA
-;SAMPLE_ALP004;Samples, ALP
-;SAMPLE_DRG028;Samples, DRG
-;SAMPLE_PTR059;Samples, PTR
-;SAMPLE_CAU023;Samples, CAU
-;SAMPLE_ZEL037;Samples, ZEL
-;SAMPLE_VER022;Samples, VER
-;SAMPLE_HOU072;Samples, HOU
-;SAMPLE_IND027;Samples, IND
-;SAMPLE_LEO016;Samples, LEO
-;SAMPLE_ODA002;Samples, ODA
-;SAMPLE_CAU056;Samples, CAU
-;SAMPLE_OSK002;Samples, OSK
-;SAMPLE_UMA008;Samples, UMA
-;SAMPLE_TIL200;Samples, TIL
-;SAMPLE_LVP029;Samples, LVP
-;SAMPLE_AES041;Samples, AES
-;SAMPLE_JOU017_Linen;Samples, JOU
-;SAMPLE_SAT004;Samples, SAT
-;SAMPLE_OMO012_2ml;Samples, OMO
-;SAMPLE_TIL026_11;Samples, TIL
-;SAMPLE_PAI002;Samples, PAI
-;SAMPLE_VER001;Samples, VER
-;SAMPLE_OMO056;Samples, OMO
-;SAMPLE_RHA001;Samples, RHA
-;SAMPLE_SCH002;Samples, SCH
-;SAMPLE_ODA019;Samples, ODA
-;SAMPLE_JOU103_MEDIUM;Samples, JOU
-;SAMPLE_NUX004;Samples, NUX
-;SAMPLE_VER023;Samples, VER
-;SAMPLE_TAT006;Samples, TAT
-;SAMPLE_VER025;Samples, VER
-;SAMPLE_PFL003;Samples, PFL
-;SAMPLE_TAT044;Samples, TAT
-#;SAMPLE_GEL040;Samples, GEL
-;SAMPLE_ODA016;Samples, ODA
-;SAMPLE_LEO006;Samples, LEO
-;SAMPLE_AES029;Samples, AES
-#;SAMPLE_GLA002;Samples, GLA
-;SAMPLE_REN018;Samples, REN
-;SAMPLE_BBL103;Samples, BBL
-;SAMPLE_EBY001_5ml;Samples, EBY
-;SAMPLE_TOO046;Samples, TOO
-;SAMPLE_AOS002_UPDATED;Samples, AOS
-;SAMPLE_DRG04D;Samples, DRG
-;SAMPLE_TIL049;Samples, TIL
+;SAMPLE_OMO150;samples, OMO
+;SAMPLE_NUX005;samples, NUX
+;SAMPLE_KAU009;samples, KAU
+;SAMPLE_OMO031;samples, OMO
+;SAMPLE_KIK006;samples, KIK
+;SAMPLE_TIL026_4.5;samples, TIL
+;SAMPLE_DEM014;samples, DEM
+;SAMPLE_CAU062;samples, CAU
+;SAMPLE_JRO009;samples, JRO
+#;SAMPLE_ROX001;samples, ROX
+;SAMPLE_ECO014;samples, ECO
+;SAMPLE_AES023;samples, AES
+;SAMPLE_ODA018;samples, ODA
+;SAMPLE_EMH012;samples, EMH
+;SAMPLE_OSK009;samples, OSK
+;SAMPLE_INN099;samples, INN
+;SAMPLE_ALP004_7ML;samples, ALP
+;SAMPLE_ALP114;samples, ALP
+;SAMPLE_SDL003;samples, SDL
+;SAMPLE_HOU033;samples, HOU
+;SAMPLE_SRN010;samples, SRN
+;SAMPLE_BYT003;samples, BYT
+;SAMPLE_DAV028;samples, DAV
+;SAMPLE_BCA067;samples, BCA
+;SAMPLE_ZEL026;samples, ZEL
+;SAMPLE_LVP003;samples, LVP
+;SAMPLE_MIL097;samples, MIL
+;SAMPLE_DCR003;samples, DCR
+;SAMPLE_AUR098;samples, AUR
+;SAMPLE_EVE021;samples, EVE
+;SAMPLE_TAT101;samples, TAT
+;SAMPLE_VEN003;samples, VEN
+;SAMPLE_JOU001_Bronzed_1ml;samples, JOU
+;SAMPLE_ECO015;samples, ECO
+;SAMPLE_NAR103;samples, NAR
+;SAMPLE_AUR017;samples, AUR
+;SAMPLE_ITC096;samples, ITC
+;SAMPLE_ECO001;samples, ECO
+;SAMPLE_BEN079_123;samples, BEN
+;SAMPLE_TIL219;samples, TIL
+;SAMPLE_DAV008;samples, DAV
+;SAMPLE_BEN034_0506;samples, BEN
+;SAMPLE_PAI011;samples, PAI
+;SAMPLE_BYT010_5_Peach_Beige;samples, BYT
+;SAMPLE_AES016;samples, AES
+;SAMPLE_MOA002;samples, MOA
+;SAMPLE_ZEL021;samples, ZEL
+;SAMPLE_CAU017;samples, CAU
+;SAMPLE_AES002;samples, AES
+;SAMPLE_AES004_;samples, AES
+;SAMPLE_BCA045_MedTan;samples, BCA
+;SAMPLE_ODA032;samples, ODA
+;SAMPLE_BEN079_91112;samples, BEN
+;SAMPLE_ERN023;samples, ERN
+;SAMPLE_REN020;samples, REN
+;SAMPLE_DBS012;samples, DBS
+;SAMPLE_COV040_SOLEIL;samples, COV
+;SAMPLE_COV028;samples, COV
+;SAMPLE_TIL202;samples, TIL
+;SAMPLE_CAU083;samples, CAU
+;SAMPLE_DEO002_COCO;samples, DEO
+;SAMPLE_OMO046;samples, OMO
+;SAMPLE_MVO028;samples, MVO
+;SAMPLE_BCA079;samples, BCA
+;SAMPLE_SAC006;samples, SAC
+;SAMPLE_ALP005_15ml;samples, ALP
+;SAMPLE_TAT004;samples, TAT
+;SAMPLE_SAC091;samples, SAC
+;SAMPLE_LEO009;samples, LEO
+;SAMPLE_TIL026_2;samples, TIL
+;SAMPLE_TIL026_3;samples, TIL
+;SAMPLE_TIL043;samples, TIL
+;SAMPLE_LIM099_ROSE;samples, LIM
+;SAMPLE_SAC073;samples, SAC
+;SAMPLE_ECO004;samples, ECO
+;SAMPLE_TAT020;samples, TAT
+;SAMPLE_IST022_2ml;samples, IST
+;SAMPLE_REN036;samples, REN
+;SAMPLE_RHA020;samples, RHA
+;SAMPLE_REN068;samples, REN
+;SAMPLE_CAU018;samples, CAU
+;SAMPLE_DRG004;samples, DRG
+;SAMPLE_BRI057;samples, BRI
+;SAMPLE_JOU103_FAIR;samples, JOU
+;SAMPLE_BYT010_3_Cream_Beige;samples, BYT
+;SAMPLE_EVE013;samples, EVE
+;SAMPLE_VER009;samples, VER
+;SAMPLE_UMA019;samples, UMA
+;SAMPLE_KAU015;samples, KAU
+;SAMPLE_LEO002;samples, LEO
+;SAMPLE_NAT006;samples, NAT
+;SAMPLE_AUR002_2ML;samples, AUR
+;SAMPLE_ZEL004;samples, ZEL
+;SAMPLE_EMH034;samples, EMH
+;SAMPLE_DAV013;samples, DAV
+;SAMPLE_SRN027;samples, SRN
+;SAMPLE_ALP001_5ml;samples, ALP
+;SAMPLE_PGY100;samples, PGY
+;SAMPLE_DRG044;samples, DRG
+;SAMPLE_DRU001;samples, DRU
+;SAMPLE_TIL209;samples, TIL
+;SAMPLE_REN078;samples, REN
+;SAMPLE_TIL108;samples, TIL
+;SAMPLE_SAC017;samples, SAC
+;SAMPLE_AOS012;samples, AOS
+;SAMPLE_SDL005;samples, SDL
+#;SAMPLE_NOB007;samples, NOB
+;SAMPLE_COV003;samples, COV
+#;SAMPLE_RAO003;samples, RAO
+;SAMPLE_OSK018;samples, OSK
+;SAMPLE_RHA029;samples, RHA
+;SAMPLE_ALG014;samples, ALG
+;SAMPLE_IND021;samples, IND
+;SAMPLE_OMO134;samples, OMO
+;SAMPLE_VIR098;samples, VIR
+;SAMPLE_UMA014;samples, UMA
+;SAMPLE_SRN008_2ml;samples, SRN
+#;SAMPLE_CAO005;samples, CAO
+;SAMPLE_BEN014;samples, BEN
+;SAMPLE_OMO057;samples, OMO
+;SAMPLE_DAV014;samples, DAV
+;SAMPLE_TOO043;samples, TOO
+;SAMPLE_PLA099;samples, PLA
+;SAMPLE_ODA017;samples, ODA
+;SAMPLE_DAV006;samples, DAV
+;SAMPLE_IND002;samples, IND
+;SAMPLE_TAT036;samples, TAT
+;SAMPLE_SDL011;samples, SDL
+;SAMPLE_FAR006;samples, FAR
+;SAMPLE_SAS001;samples, SAS
+;SAMPLE_SKY019;samples, SKY
+#;SAMPLE_NOB001;samples, NOB
+;SAMPLE_COV039;samples, COV
+;SAMPLE_BOT024;samples, BOT
+;SAMPLE_ITC013;samples, ITC
+;SAMPLE_PTR058;samples, PTR
+;SAMPLE_KVA099;samples, KVA
+;SAMPLE_BCA034;samples, BCA
+;SAMPLE_ALP005_20ML;samples, ALP
+;SAMPLE_KIK004;samples, KIK
+;SAMPLE_BCA137;samples, BCA
+;SAMPLE_EBY002_6ml;samples, EBY
+;SAMPLE_OMO014_2ML;samples, OMO
+;SAMPLE_OSK012;samples, OSK
+;SAMPLE_GLD005;samples, GLD
+;SAMPLE_DAV047;samples, DAV
+;SAMPLE_VEN004;samples, VEN
+;SAMPLE_OSK023;samples, OSK
+;SAMPLE_OMO002_2ml;samples, OMO
+;SAMPLE_ANA105;samples, ANA
+;SAMPLE_AUR004;samples, AUR
+;SAMPLE_SAT009;samples, SAT
+;SAMPLE_TIL022_FAIR4;samples, TIL
+;SAMPLE_ALP044;samples, ALP
+;SAMPLE_OMO114;samples, OMO
+;SAMPLE_VER002;samples, VER
+;SAMPLE_LIM099_VLNTNE;samples, LIM
+;SAMPLE_DAV003;samples, DAV
+;SAMPLE_EMH021;samples, EMH
+;SAMPLE_AES057;samples, AES
+;SAMPLE_SAC019;samples, SAC
+;SAMPLE_DRG024;samples, DRG
+;SAMPLE_AES013;samples, AES
+;SAMPLE_OMO121;samples, OMO
+;SAMPLE_DAV035;samples, DAV
+;SAMPLE_REN004;samples, REN
+;SAMPLE_EMH020;samples, EMH
+;SAMPLE_EVE004;samples, EVE
+;SAMPLE_KAU012;samples, KAU
+;SAMPLE_OMO001_2ml;samples, OMO
+;SAMPLE_ODA030;samples, ODA
+;SAMPLE_BBL006_Liquid_Blender_Cleanser;samples, BBL
+;SAMPLE_ODA035;samples, ODA
+;SAMPLE_ALG007;samples, ALG
+;SAMPLE_JOU017_Beige_Nat;samples, JOU
+;SAMPLE_BEN002_03;samples, BEN
+;SAMPLE_OSK014;samples, OSK
+;SAMPLE_HOU052;samples, HOU
+;SAMPLE_AES032;samples, AES
+;SAMPLE_DRU096;samples, DRU
+;SAMPLE_DAR003;samples, DAR
+;SAMPLE_TIL206;samples, TIL
+;SAMPLE_BEN002_01;samples, BEN
+;SAMPLE_LIM099_NEON;samples, LIM
+#;SAMPLE_TIS004;samples, TIS
+;SAMPLE_REN066;samples, REN
+;SAMPLE_AES046;samples, AES
+;SAMPLE_PTR082;samples, PTR
+;SAMPLE_KAI018;samples, KAI
+;SAMPLE_BYT010_7_Vanilla_Beige;samples, BYT
+;SAMPLE_PAI008;samples, PAI
+;SAMPLE_BYT199;samples, BYT
+;SAMPLE_CAU010_1ml;samples, CAU
+;SAMPLE_TIL026_8;samples, TIL
+;SAMPLE_DRG033_15ml;samples, DRG
+;SAMPLE_GLD002_5ML;samples, GLD
+;SAMPLE_PTR100;samples, PTR
+;SAMPLE_OMO101_OMO101;samples, OMO
+;SAMPLE_ODA039;samples, ODA
+;SAMPLE_TOO035;samples, TOO
+;SAMPLE_PIX035;samples, PIX
+#;SAMPLE_VTL027;samples, VTL
+;SAMPLE_ITC060;samples, ITC
+;SAMPLE_DRG022_Light_Med;samples, DRG
+;SAMPLE_PTR026;samples, PTR
+;SAMPLE_DRG013;samples, DRG
+;SAMPLE_PAI010;samples, PAI
+;SAMPLE_MGO013;samples, MGO
+#;SAMPLE2_DRU004;samples, SAM
+;SAMPLE_DRG014;samples, DRG
+;SAMPLE_AUR099;samples, AUR
+;SAMPLE_TBC001;samples, TBC
+;SAMPLE_BRI005;samples, BRI
+# SAMPLE_NOB019;samples, NOB
+;SAMPLE_ALG025;samples, ALG
+;SAMPLE_ALP016_5ml;samples, ALP
+;SAMPLE_ROE001;samples, ROE
+;SAMPLE_OSK007;samples, OSK
+;SAMPLE_OMO017;samples, OMO
+;SAMPLE_SAC024;samples, SAC
+;SAMPLE_ALG003_2;samples, ALG
+;SAMPLE_ALP016_7ML;samples, ALP
+;SAMPLE_BAX016;samples, BAX
+;SAMPLE_KAI001_2ml;samples, KAI
+;SAMPLE_LEO001;samples, LEO
+;SAMPLE_COV051;samples, COV
+;SAMPLE_VER004;samples, VER
+;SAMPLE_LVP006;samples, LVP
+;SAMPLE_LVP001DUO;samples, LVP
+;SAMPLE_SRN044;samples, SRN
+;SAMPLE_BAX007;samples, BAX
+;SAMPLE_GLD006_5ML;samples, GLD
+;SAMPLE_COV001;samples, COV
+;SAMPLE_ALP003;samples, ALP
+;SAMPLE_BYT023_5_Peach_Beige;samples, BYT
+;SAMPLE_TAT009;samples, TAT
+;SAMPLE_CAU092;samples, CAU
+;SAMPLE_SRN059;samples, SRN
+;SAMPLE_JOU017_Porcelain;samples, JOU
+;SAMPLE_SAC012;samples, SAC
+;SAMPLE_CAU016;samples, CAU
+;SAMPLE_AES017_1.5ml;samples, AES
+;SAMPLE_LEV013;samples, LEV
+;SAMPLE_HOU055;samples, HOU
+;SAMPLE_LEO004;samples, LEO
+;SAMPLE_JOU001_Caramel;samples, JOU
+;SAMPLE_RHA018;samples, RHA
+;SAMPLE_SAC004;samples, SAC
+;SAMPLE_FAR003;samples, FAR
+;SAMPLE_SRN007_2ml;samples, SRN
+#;SAMPLE_NOB021;samples, NOB
+;SAMPLE_LEO008;samples, LEO
+;SAMPLE_KIK012;samples, KIK
+;SAMPLE_SRN037;samples, SRN
+;SAMPLE_ZEL002;samples, ZEL
+;SAMPLE_LEL004;samples, LEL
+;SAMPLE_SAC018;samples, SAC
+;SAMPLE_TAT039;samples, TAT
+;SAMPLE_BYT196;samples, BYT
+;SAMPLE_BBL006;samples, BBL
+;SAMPLE_SRN004_2ml;samples, SRN
+;SAMPLE_KSV008;samples, KSV
+;SAMPLE_DAV034;samples, DAV
+;SAMPLE_EMH014;samples, EMH
+#;SAMPLE___PTR031___PTR031;samples, __P
+;SAMPLE_FRE005;samples, FRE
+;SAMPLE_DAV019;samples, DAV
+;SAMPLE_RJU002;samples, RJU
+;SAMPLE_ERN008;samples, ERN
+;SAMPLE_MIL099;samples, MIL
+;SAMPLE_SAC032;samples, SAC
+;SAMPLE_KAI003;samples, KAI
+;SAMPLE_OMO005_2ml;samples, OMO
+;SAMPLE_TAT005;samples, TAT
+#;SAMPLE_GEL002;samples, GEL
+;SAMPLE_AES021;samples, AES
+;SAMPLE_SRN001_2ml;samples, SRN
+;SAMPLE_BRI017;samples, BRI
+;SAMPLE_ALP017;samples, ALP
+;SAMPLE_TIL217;samples, TIL
+;SAMPLE_SRN042;samples, SRN
+;SAMPLE_VER005;samples, VER
+;SAMPLE_IND023;samples, IND
+;SAMPLE_LEO012;samples, LEO
+;SAMPLE_ZEL018;samples, ZEL
+;SAMPLE_ALP013_15ml;samples, ALP
+;SAMPLE_FRE001;samples, FRE
+;SAMPLE_JOU103_DEEPS;samples, JOU
+;SAMPLE_JOU001_Pearl_1ml;samples, JOU
+;SAMPLE_ODA006;samples, ODA
+;SAMPLE_DRG031;samples, DRG
+;SAMPLE_PTR013;samples, PTR
+;SAMPLE_SKY005;samples, SKY
+;SAMPLE_TAT001;samples, TAT
+;SAMPLE_UMA005_1OZ;samples, UMA
+;SAMPLE_JOU001_Golden_1ml;samples, JOU
+;SAMPLE_SAC008;samples, SAC
+#;SAMPLE_PHB028;samples, PHB
+;SAMPLE_ERN009;samples, ERN
+;SAMPLE_DCR005;samples, DCR
+;SAMPLE_SRN005_2ml;samples, SRN
+;SAMPLE_GLD004;samples, GLD
+;SAMPLE_SAT002;samples, SAT
+;SAMPLE_TIL212;samples, TIL
+;SAMPLE_SAC029;samples, SAC
+;SAMPLE_DCR004;samples, DCR
+;SAMPLE_KIN099;samples, KIN
+;SAMPLE_BAB005lotion;samples, BAB
+;SAMPLE_BEN034_0102;samples, BEN
+;SAMPLE_BYT198;samples, BYT
+;SAMPLE_AUR003_4ML;samples, AUR
+;SAMPLE_DBS009;samples, DBS
+;SAMPLE_TIL022_FAIR3;samples, TIL
+;SAMPLE_JOU013;samples, JOU
+;SAMPLE_EVE001;samples, EVE
+;SAMPLE_DRU095;samples, DRU
+;SAMPLE_BRI013;samples, BRI
+;SAMPLE_BEN075;samples, BEN
+;SAMPLE_SKY028;samples, SKY
+;SAMPLE_TIL026_1;samples, TIL
+;SAMPLE_ZEL028.X;samples, ZEL
+#;SAMPLE__ODA032;samples, _OD
+;SAMPLE_BBL037_3ML;samples, BBL
+;SAMPLE_RHA027;samples, RHA
+;SAMPLE_REN035;samples, REN
+;SAMPLE_PAI007;samples, PAI
+;SAMPLE_TOO008;samples, TOO
+;SAMPLE_DRG001;samples, DRG
+;SAMPLE_BEN098_DELUXE01;samples, BEN
+;SAMPLE_TIL026_5;samples, TIL
+;SAMPLE_KAU007;samples, KAU
+;SAMPLE_VER003_2ml;samples, VER
+;SAMPLE_LIV015;samples, LIV
+;SAMPLE_DRG028_INTENSE;samples, DRG
+;SAMPLE_AUR002;samples, AUR
+;SAMPLE_BCA053;samples, BCA
+;SAMPLE_ALG003;samples, ALG
+;SAMPLE_CAU012;samples, CAU
+;SAMPLE_AES006_1.5ml;samples, AES
+;SAMPLE_KSV003;samples, KSV
+;SAMPLE_MGO003;samples, MGO
+;SAMPLE_OMO006_2ML;samples, OMO
+;SAMPLE_BCA037NUDETAN;samples, BCA
+;SAMPLE_ODA076;samples, ODA
+#;SAMPLE_NOB031;samples, NOB
+;SAMPLE_AUR005;samples, AUR
+;SAMPLE_KAU014;samples, KAU
+;SAMPLE_TCF014;samples, TCF
+;SAMPLE_AES058;samples, AES
+;SAMPLE_ODA015;samples, ODA
+;SAMPLE_BCA045_6ml;samples, BCA
+;SAMPLE_TIL220;samples, TIL
+;SAMPLE_BEN041_01;samples, BEN
+;SAMPLE_JOU017_Hazel;samples, JOU
+;SAMPLE_AES038;samples, AES
+;SAMPLE_UMA022;samples, UMA
+;SAMPLE_LVP008;samples, LVP
+;SAMPLE_DRU099;samples, DRU
+#;SAMPLE15ML_ALP016;samples, SAM
+#;SAMPLE_VTL021;samples, VTL
+;SAMPLE_TIL046;samples, TIL
+;SAMPLE_SRN004;samples, SRN
+;SAMPLE_RHA002;samples, RHA
+;SAMPLE_COO014;samples, COO
+;SAMPLE_OMO100;samples, OMO
+;SAMPLE_OMO013_2ML;samples, OMO
+;SAMPLE_TOO024;samples, TOO
+;SAMPLE_VIR099;samples, VIR
+;SAMPLE_EMH028;samples, EMH
+;SAMPLE_IST034_2.3ml;samples, IST
+;SAMPLE_SAC030;samples, SAC
+;SAMPLE_DRG015;samples, DRG
+;SAMPLE_ZEL029;samples, ZEL
+;SAMPLE_PAI001;samples, PAI
+;SAMPLE_DAR004;samples, DAR
+;SAMPLE_ZEL027;samples, ZEL
+;SAMPLE_BCA037_MultiShade;samples, BCA
+;SAMPLE_OSK006_2ml;samples, OSK
+;SAMPLE_SAC003;samples, SAC
+;SAMPLE_LVP019;samples, LVP
+;SAMPLE_OMO019;samples, OMO
+;SAMPLE_OMO066;samples, OMO
+;SAMPLE_COO001;samples, COO
+;SAMPLE_LVP002;samples, LVP
+;SAMPLE_CAU097;samples, CAU
+;SAMPLE_CAU027;samples, CAU
+;SAMPLE_AES028_1.5ml;samples, AES
+;SAMPLE_ALG004;samples, ALG
+;SAMPLE_IST031;samples, IST
+#;SAMPLET_PAI010;samples, SAM
+;SAMPLE_AES008_1.5ml;samples, AES
+;SAMPLE_BRI018;samples, BRI
+;SAMPLE_TCF015;samples, TCF
+;SAMPLE_IST012;samples, IST
+;SAMPLE_TIL208;samples, TIL
+;SAMPLE_BRI056;samples, BRI
+;SAMPLE_REN056;samples, REN
+;SAMPLE_BEN058;samples, BEN
+;SAMPLE_ITC098;samples, ITC
+;SAMPLE_MAM004;samples, MAM
+;SAMPLE_GLO004;samples, GLO
+;SAMPLE_HUD089;samples, HUD
+;SAMPLE_TAT090;samples, TAT
+#;SAMPLE_GEL010;samples, GEL
+;SAMPLE_REN015;samples, REN
+;SAMPLE_BCA037_FairLight;samples, BCA
+;SAMPLE_TAT047;samples, TAT
+;SAMPLE_GLD003;samples, GLD
+;SAMPLE_KSV012;samples, KSV
+;SAMPLE_OSK008;samples, OSK
+;SAMPLE_DRG036;samples, DRG
+;SAMPLE_TIL218;samples, TIL
+;SAMPLE_LAN051;samples, LAN
+;SAMPLE_ODA011;samples, ODA
+;SAMPLE_ALP011_7.5ml;samples, ALP
+;SAMPLE_LVP012;samples, LVP
+;SAMPLE_SAC025;samples, SAC
+;SAMPLE_LEO010;samples, LEO
+;SAMPLE_CAU061;samples, CAU
+;SAMPLE_ALP106;samples, ALP
+;SAMPLE_OMO030;samples, OMO
+;SAMPLE_IST020;samples, IST
+;SAMPLE_VIR097;samples, VIR
+;SAMPLE_JRO006;samples, JRO
+;SAMPLE_PTR049;samples, PTR
+#;SAMPLE_REG001;samples, REG
+;SAMPLE_TIL216;samples, TIL
+;SAMPLE_LVP011;samples, LVP
+;SAMPLE_AES018;samples, AES
+;SAMPLE_DBS002;samples, DBS
+;SAMPLE_BAB021;samples, BAB
+;SAMPLE_AES027;samples, AES
+;SAMPLE_VOT011;samples, VOT
+;SAMPLE_SAC016;samples, SAC
+;SAMPLE_AUR003;samples, AUR
+;SAMPLE_REN022;samples, REN
+;SAMPLE_CAU009;samples, CAU
+;SAMPLE_DCR001;samples, DCR
+;SAMPLE_AES010;samples, AES
+;SAMPLE_BRI012;samples, BRI
+;SAMPLE_ALP016;samples, ALP
+;SAMPLE_KAU005;samples, KAU
+;SAMPLE_JOU035;samples, JOU
+;SAMPLE_OMO034;samples, OMO
+;SAMPLE_AES022_1.5ml;samples, AES
+;SAMPLE_TAT013;samples, TAT
+;SAMPLE_SAT008;samples, SAT
+;SAMPLE_ECO018;samples, ECO
+;SAMPLE_EMH005;samples, EMH
+;SAMPLE_TAT002;samples, TAT
+;SAMPLE_NUX001;samples, NUX
+;SAMPLE_JOU017_Nude_Tube;samples, JOU
+;SAMPLE_KSV019;samples, KSV
+;SAMPLE_PHI006;samples, PHI
+;SAMPLE_OMO040;samples, OMO
+;SAMPLE_REN111;samples, REN
+;SAMPLE_ODA034;samples, ODA
+;SAMPLE_REN017_5ml;samples, REN
+;SAMPLE_TCF012;samples, TCF
+;SAMPLE_ALP012;samples, ALP
+;SAMPLE_OMO015_2ML;samples, OMO
+;SAMPLE_TAT028_Sweet;samples, TAT
+;SAMPLE_IND005;samples, IND
+;SAMPLE_LEO011;samples, LEO
+;SAMPLE_TIL022_FAIR5;samples, TIL
+;SAMPLE_ODA007;samples, ODA
+;SAMPLE_OMO099;samples, OMO
+;SAMPLE_TAT017;samples, TAT
+;SAMPLE_DCR006;samples, DCR
+;SAMPLE_ODA012;samples, ODA
+;SAMPLE_OSK001;samples, OSK
+;SAMPLE_BCA099;samples, BCA
+;SAMPLE_PGY099;samples, PGY
+;SAMPLE_OMO003;samples, OMO
+;SAMPLE_DCR010;samples, DCR
+;SAMPLE_EMH046;samples, EMH
+;SAMPLE_CAU005;samples, CAU
+;SAMPLE_VOT023;samples, VOT
+;SAMPLE_KIK002;samples, KIK
+;SAMPLE_DAK017;samples, DAK
+;SAMPLE_NUX009;samples, NUX
+;SAMPLE_DBS001;samples, DBS
+;SAMPLE_TIL201;samples, TIL
+;SAMPLE_PFL001;samples, PFL
+;SAMPLE_IST034_7ml;samples, IST
+;SAMPLE_ZIT001;samples, ZIT
+;SAMPLE_TIL026_7;samples, TIL
+;SAMPLE_LIM099_LEELOO;samples, LIM
+;SAMPLE_HUD107;samples, HUD
+;SAMPLE_MVO005;samples, MVO
+;SAMPLE_AES009;samples, AES
+;SAMPLE_DAK004;samples, DAK
+;SAMPLE_JOU001_Opal_1ml;samples, JOU
+;SAMPLE_AES040;samples, AES
+;SAMPLE_DAK008;samples, DAK
+;SAMPLE_AES007_1ml;samples, AES
+;SAMPLE_DAK007;samples, DAK
+;SAMPLE_PTR080;samples, PTR
+;SAMPLE_KAU008;samples, KAU
+;SAMPLE_BCA054;samples, BCA
+;SAMPLE_UMA013;samples, UMA
+;SAMPLE_KVM028;samples, KVM
+;SAMPLE_KIK003;samples, KIK
+;SAMPLE_PIX011;samples, PIX
+#;SAMPLE_GIN001;samples, GIN
+;SAMPLE_NUX010;samples, NUX
+;SAMPLE_SDJ004;samples, SDJ
+;SAMPLE_DAV004;samples, DAV
+;SAMPLE_GLD018;samples, GLD
+;SAMPLE_ALP015_5ml;samples, ALP
+;SAMPLE_ODA023;samples, ODA
+#;SAMPLE_NOB051;samples, NOB
+;SAMPLE_CAU028;samples, CAU
+;SAMPLE_DAV033;samples, DAV
+;SAMPLE_BAX015;samples, BAX
+;SAMPLE_OSK006_5ml;samples, OSK
+;SAMPLE_AES020;samples, AES
+;SAMPLE_CAE001;samples, CAE
+;SAMPLE_NAR005;samples, NAR
+;SAMPLE_AES039;samples, AES
+;SAMPLE_DRG023;samples, DRG
+;SAMPLE_LVP028;samples, LVP
+;SAMPLE_EMH040;samples, EMH
+;SAMPLE_IOP002;samples, IOP
+;SAMPLE_BCA029;samples, BCA
+;SAMPLE_LEO005;samples, LEO
+;SAMPLE_OMO011_2ML;samples, OMO
+;SAMPLE_DRG011;samples, DRG
+#;SAMPLE___CAU019;samples, __C
+;SAMPLE_ALG023;samples, ALG
+;SAMPLE_TIL043_1.5;samples, TIL
+;SAMPLE_PTR042;samples, PTR
+;SAMPLE_CAU057;samples, CAU
+;SAMPLE_AUR001;samples, AUR
+;SAMPLE_AES001;samples, AES
+;SAMPLE_JOU001_Blush;samples, JOU
+;SAMPLE_ALG026;samples, ALG
+;SAMPLE_ODA009;samples, ODA
+;SAMPLE_DRG042;samples, DRG
+;SAMPLE_SRN009_2ml;samples, SRN
+;SAMPLE_MGO002;samples, MGO
+;SAMPLE_BYT023_2_Apricot_Light;samples, BYT
+;SAMPLE_OSK003_5ml;samples, OSK
+;SAMPLE_LEL001;samples, LEL
+;SAMPLE_DBS010;samples, DBS
+;SAMPLE_TIL221;samples, TIL
+;SAMPLE_BAB004;samples, BAB
+;SAMPLE_KAU006;samples, KAU
+;SAMPLE_ODA014;samples, ODA
+;SAMPLE_OMO022;samples, OMO
+;SAMPLE_DRU097;samples, DRU
+;SAMPLE_KAU030;samples, KAU
+;SAMPLE_LXR002;samples, LXR
+;SAMPLE_PHI025;samples, PHI
+;SAMPLE_DRG002;samples, DRG
+;SAMPLE_PAI006;samples, PAI
+;SAMPLE_DRG038;samples, DRG
+;SAMPLE_AES005_1ml;samples, AES
+;SAMPLE_CAU021;samples, CAU
+;SAMPLE_BEN098_DELUXE02;samples, BEN
+;SAMPLE_RHA008;samples, RHA
+;SAMPLE_BEN041_02;samples, BEN
+;SAMPLE_KAI019;samples, KAI
+;SAMPLE_CAU079;samples, CAU
+;SAMPLE_CAU002_2ML;samples, CAU
+;SAMPLE_BCA025;samples, BCA
+;SAMPLE_EVE029;samples, EVE
+;SAMPLE_DAK013;samples, DAK
+;SAMPLE_IST042;samples, IST
+;SAMPLE_DRU098;samples, DRU
+;SAMPLE_BCA138;samples, BCA
+;SAMPLE_BUX021;samples, BUX
+;SAMPLE_REN048;samples, REN
+;SAMPLE_HOU033_DELUXE;samples, HOU
+;SAMPLE_ALG022;samples, ALG
+;SAMPLE_ODA003;samples, ODA
+;SAMPLE_REN018_5ML;samples, REN
+;SAMPLE_TIL210;samples, TIL
+;SAMPLE_OMO033;samples, OMO
+;SAMPLE_MGO022;samples, MGO
+;SAMPLE_KIK014;samples, KIK
+;SAMPLE_DAV036;samples, DAV
+;SAMPLE_DRG027;samples, DRG
+;SAMPLE_IST001_2ml;samples, IST
+;SAMPLE_DAV020;samples, DAV
+;SAMPLE_DAK005;samples, DAK
+;SAMPLE_SAC023;samples, SAC
+;SAMPLE_SKY007_;samples, SKY
+;SAMPLE_ALP007_15ml;samples, ALP
+;SAMPLE_ODA036;samples, ODA
+;SAMPLE_TAT007;samples, TAT
+;SAMPLE_ALP001;samples, ALP
+;SAMPLE_CAU033;samples, CAU
+;SAMPLE_ODA004;samples, ODA
+;SAMPLE_OSK028;samples, OSK
+;SAMPLE_BRI008;samples, BRI
+;SAMPLE_TAT018;samples, TAT
+;SAMPLE_BEN041_03;samples, BEN
+;SAMPLE_ALP014_12g;samples, ALP
+;SAMPLE_DRG006Serum;samples, DRG
+;SAMPLE_DRG029;samples, DRG
+;SAMPLE_TIL022_MED6;samples, TIL
+;SAMPLE_DRG033_2ML_;samples, DRG
+;SAMPLE_LXR003;samples, LXR
+;SAMPLE_ALP019_4ml;samples, ALP
+;SAMPLE_CAU110;samples, CAU
+;SAMPLE_KSV007;samples, KSV
+#;SAMPLE15ML_DRG042;samples, SAM
+;SAMPLE_WCO002;samples, WCO
+;SAMPLE_TOO040;samples, TOO
+;SAMPLE_LXR001;samples, LXR
+;SAMPLE_DAK031;samples, DAK
+;SAMPLE_PAI012;samples, PAI
+;SAMPLE_KIN003;samples, KIN
+;SAMPLE_MIL098;samples, MIL
+;SAMPLE_BEN079_456;samples, BEN
+;SAMPLE_SAC082;samples, SAC
+;SAMPLE_AOS013;samples, AOS
+;SAMPLE_TIL207;samples, TIL
+;SAMPLE_ECO008;samples, ECO
+#;SAMPLE__ZEL003__ZEL003;samples, _ZE
+;SAMPLE_SAS001_5ML;samples, SAS
+;SAMPLE_VER003;samples, VER
+;SAMPLE_LEO013;samples, LEO
+;SAMPLE_OMO089;samples, OMO
+;SAMPLE_TIL084;samples, TIL
+;SAMPLE_TIL203;samples, TIL
+;SAMPLE_TAT010;samples, TAT
+;SAMPLE_CAU002_1ML;samples, CAU
+;SAMPLE_VIN001;samples, VIN
+;SAMPLE_ODA031;samples, ODA
+;SAMPLE_BRI001;samples, BRI
+;SAMPLE_ALP125;samples, ALP
+;SAMPLE_DAK020;samples, DAK
+;SAMPLE_ALP004_5ML;samples, ALP
+;SAMPLE_ECO006;samples, ECO
+;SAMPLE_TIL204;samples, TIL
+;SAMPLE_DEO002_PEAR;samples, DEO
+;SAMPLE_GLD002;samples, GLD
+;SAMPLE_LVP013;samples, LVP
+;SAMPLE_BCA045;samples, BCA
+;SAMPLE_TIL026_9;samples, TIL
+;SAMPLE_BRI055;samples, BRI
+;SAMPLE_TAT023;samples, TAT
+;SAMPLE_PHI012;samples, PHI
+;SAMPLE_COV097;samples, COV
+;SAMPLE_LIM099_BUNNY;samples, LIM
+;SAMPLE_ODA010;samples, ODA
+;SAMPLE_RHA001_DUO;samples, RHA
+;SAMPLE_AES019;samples, AES
+;SAMPLE_CAU055;samples, CAU
+;SAMPLE_TIL028_SOMARY;samples, TIL
+;SAMPLE_KAU019;samples, KAU
+;SAMPLE_JOU017_Nude;samples, JOU
+;SAMPLE_CAU006_3ml;samples, CAU
+;SAMPLE_RHA028;samples, RHA
+;SAMPLE_BOT019;samples, BOT
+#;SAMPLE15ML_ALP004;samples, SAM
+;SAMPLE_TIL215;samples, TIL
+;SAMPLE_AES012;samples, AES
+;SAMPLE_PGY001;samples, PGY
+;SAMPLE_REN021;samples, REN
+;SAMPLE_IND001;samples, IND
+;SAMPLE_IND019;samples, IND
+;SAMPLE_LIM099_SEXT;samples, LIM
+;SAMPLE_IST013;samples, IST
+;SAMPLE_AES017Cream;samples, AES
+;SAMPLE_BAX020;samples, BAX
+;SAMPLE_DAK002;samples, DAK
+;SAMPLE_DRG010;samples, DRG
+;SAMPLE_GLD006;samples, GLD
+;SAMPLE_DAK032;samples, DAK
+;SAMPLE_HUD039;samples, HUD
+;SAMPLE_BBL006_Mini_Solid_Cleanser;samples, BBL
+;SAMPLE_RJU001;samples, RJU
+;SAMPLE_ALP003_7.5ml;samples, ALP
+;SAMPLE_CAU084;samples, CAU
+;SAMPLE_BEN038_05;samples, BEN
+;SAMPLE_REN064;samples, REN
+;SAMPLE_DRG007;samples, DRG
+;SAMPLE_TIL026_4;samples, TIL
+;SAMPLE_RHA003;samples, RHA
+;SAMPLE_ZEL008;samples, ZEL
+;SAMPLE_DBS015;samples, DBS
+;SAMPLE_DAV007;samples, DAV
+;SAMPLE_SAT010;samples, SAT
+;SAMPLE_ITC097;samples, ITC
+;SAMPLE_ERN030;samples, ERN
+;SAMPLE_TIL214;samples, TIL
+;SAMPLE_JOU017_Beige_Rose;samples, JOU
+;SAMPLE_MAR001;samples, MAR
+;SAMPLE_HUD059;samples, HUD
+;SAMPLE_COV014;samples, COV
+;SAMPLE_SAMPLE_COO017;samples, COO
+;SAMPLE_OMO032;samples, OMO
+;SAMPLE_BCA086_Duo;samples, BCA
+;SAMPLE_BEN036;samples, BEN
+;SAMPLE_MOA001;samples, MOA
+;SAMPLE_TCF011;samples, TCF
+;SAMPLE_VOT005;samples, VOT
+;SAMPLE_TAT008;samples, TAT
+#;SAMPLE_MMA004;samples, MMA
+;SAMPLE_TAT014;samples, TAT
+;SAMPLE_REN003;samples, REN
+;SAMPLE_CAU002;samples, CAU
+;SAMPLE_JRO010;samples, JRO
+;SAMPLE_OMO148;samples, OMO
+;SAMPLE_ALG005;samples, ALG
+;SAMPLE_REN101;samples, REN
+;SAMPLE_CAU008/;samples, CAU
+;SAMPLE_AOS002;samples, AOS
+;SAMPLE_EVE075;samples, EVE
+;SAMPLE_DAV027;samples, DAV
+;SAMPLE_AOS001;samples, AOS
+;SAMPLE_REN017;samples, REN
+;SAMPLE_OMO009_2ml;samples, OMO
+;SAMPLE_HOU069;samples, HOU
+;SAMPLE_LVP005;samples, LVP
+#;SAMPLE_VTL010_OpaqueLatte;samples, VTL
+;SAMPLE_OMO024;samples, OMO
+;SAMPLE_PAI004;samples, PAI
+;SAMPLE_ALG009;samples, ALG
+;SAMPLE_JOU012;samples, JOU
+;SAMPLE_OSK011_;samples, OSK
+;SAMPLE_EVE005_5ML;samples, EVE
+;SAMPLE_JOU017_Chamomile;samples, JOU
+;SAMPLE_DAV032;samples, DAV
+;SAMPLE_RHA006;samples, RHA
+;SAMPLE_FRE058;samples, FRE
+;SAMPLE_REN016;samples, REN
+;SAMPLE_EMH001;samples, EMH
+;SAMPLE_SKY001;samples, SKY
+#;SAMPLE_VTL017;samples, VTL
+#;SAMPLE_NOB050;samples, NOB
+;SAMPLE_TAN001;samples, TAN
+;SAMPLE_DAK010;samples, DAK
+#;SAMPLE_RAO005;samples, RAO
+;SAMPLE_ZEL028;samples, ZEL
+;SAMPLE_TCF020;samples, TCF
+;SAMPLE_REN017_2ml;samples, REN
+;SAMPLE_ZEL007;samples, ZEL
+;SAMPLE_TAT035;samples, TAT
+;SAMPLE_CAU024;samples, CAU
+;SAMPLE_KAU018;samples, KAU
+;SAMPLE_BEN199;samples, BEN
+;SAMPLE_SAC092;samples, SAC
+;SAMPLE_DRG037;samples, DRG
+;SAMPLE_ALP066;samples, ALP
+;SAMPLE_LVP001;samples, LVP
+;SAMPLE_REN013;samples, REN
+;SAMPLE_TAT028_Vivacious;samples, TAT
+;SAMPLE_LEO007;samples, LEO
+;SAMPLE_ALP010;samples, ALP
+;SAMPLE_KVA017;samples, KVA
+;SAMPLE_BYT197;samples, BYT
+;SAMPLE_LEO003;samples, LEO
+;SAMPLE_JOU001_DeepBronzed;samples, JOU
+;SAMPLE_BEN002_02;samples, BEN
+;SAMPLE_LIM099_CHOCCH;samples, LIM
+;SAMPLE_DRU006;samples, DRU
+;SAMPLE_ODA001;samples, ODA
+;SAMPLE_TIL026_10;samples, TIL
+;SAMPLE_FRE008;samples, FRE
+;SAMPLE_IST014;samples, IST
+;SAMPLE_CAU013;samples, CAU
+;SAMPLE_BEN025;samples, BEN
+;SAMPLE_VER005_7ML;samples, VER
+;SAMPLE_TIL043_DELUXE;samples, TIL
+;SAMPLE_LVP015;samples, LVP
+;SAMPLE_TAT003;samples, TAT
+;SAMPLE_TIL026_12;samples, TIL
+;SAMPLE_PTR020;samples, PTR
+;SAMPLE_TIL022_MED5;samples, TIL
+;SAMPLE_OMO028;samples, OMO
+;SAMPLE_EVE002;samples, EVE
+;SAMPLE_SAC081;samples, SAC
+;SAMPLE_CAE001_30ML;samples, CAE
+;SAMPLE_DRG015_5ml;samples, DRG
+;SAMPLE_OMO009;samples, OMO
+;SAMPLE_REN084;samples, REN
+;SAMPLE_OMO067;samples, OMO
+;SAMPLE_DRU094;samples, DRU
+;SAMPLE_UMA005;samples, UMA
+;SAMPLE_PLA100;samples, PLA
+;SAMPLE_TIL205;samples, TIL
+;SAMPLE_SRN002_2ml;samples, SRN
+;SAMPLE_OSK016;samples, OSK
+;SAMPLE_OMO027;samples, OMO
+;SAMPLE_IST009;samples, IST
+;SAMPLE_REN038_2ml;samples, REN
+;SAMPLE_ODA005;samples, ODA
+#;SAMPLE_Resveratrol_Lift_Eye_Lifting_Balm;samples, Res
+;SAMPLE_ODA074;samples, ODA
+;SAMPLE_OMO017_2ML;samples, OMO
+;SAMPLE_TIL061_KIMKW;samples, TIL
+;SAMPLE_ODA008;samples, ODA
+;SAMPLE_ODA029;samples, ODA
+;SAMPLE_JOU036;samples, JOU
+;SAMPLE_REN008;samples, REN
+#;SAMPLE_NOB008;samples, NOB
+;SAMPLE_BOT002;samples, BOT
+;SAMPLE_MAM005;samples, MAM
+;SAMPLE_ECO005;samples, ECO
+;SAMPLE_DRG032;samples, DRG
+;SAMPLE_JOU001_Glow_1ml;samples, JOU
+;SAMPLE_CAU058;samples, CAU
+;SAMPLE_DRU011;samples, DRU
+;SAMPLE_DRG003;samples, DRG
+;SAMPLE_OMO128;samples, OMO
+;SAMPLE_ZEL006;samples, ZEL
+;SAMPLE_GLO002;samples, GLO
+;SAMPLE_FPJ014;samples, FPJ
+;SAMPLE_NUE011;samples, NUE
+;SAMPLE_SAC083;samples, SAC
+;SAMPLE_JRO008;samples, JRO
+;SAMPLE_TIL211;samples, TIL
+;SAMPLE_BYT010_2_Neutral_Beige;samples, BYT
+;SAMPLE_DRG022_Med_Deep;samples, DRG
+;SAMPLE_DRU004;samples, DRU
+;SAMPLE_PAI019;samples, PAI
+;SAMPLE_TIL213;samples, TIL
+;SAMPLE_OMO017_Medium;samples, OMO
+;SAMPLE_DRU002;samples, DRU
+;SAMPLE_EVE032;samples, EVE
+;SAMPLE_EBY001;samples, EBY
+;SAMPLE_ODA013;samples, ODA
+;SAMPLE_ALP004;samples, ALP
+;SAMPLE_DRG028;samples, DRG
+;SAMPLE_PTR059;samples, PTR
+;SAMPLE_CAU023;samples, CAU
+;SAMPLE_ZEL037;samples, ZEL
+;SAMPLE_VER022;samples, VER
+;SAMPLE_HOU072;samples, HOU
+;SAMPLE_IND027;samples, IND
+;SAMPLE_LEO016;samples, LEO
+;SAMPLE_ODA002;samples, ODA
+;SAMPLE_CAU056;samples, CAU
+;SAMPLE_OSK002;samples, OSK
+;SAMPLE_UMA008;samples, UMA
+;SAMPLE_TIL200;samples, TIL
+;SAMPLE_LVP029;samples, LVP
+;SAMPLE_AES041;samples, AES
+;SAMPLE_JOU017_Linen;samples, JOU
+;SAMPLE_SAT004;samples, SAT
+;SAMPLE_OMO012_2ml;samples, OMO
+;SAMPLE_TIL026_11;samples, TIL
+;SAMPLE_PAI002;samples, PAI
+;SAMPLE_VER001;samples, VER
+;SAMPLE_OMO056;samples, OMO
+;SAMPLE_RHA001;samples, RHA
+;SAMPLE_SCH002;samples, SCH
+;SAMPLE_ODA019;samples, ODA
+;SAMPLE_JOU103_MEDIUM;samples, JOU
+;SAMPLE_NUX004;samples, NUX
+;SAMPLE_VER023;samples, VER
+;SAMPLE_TAT006;samples, TAT
+;SAMPLE_VER025;samples, VER
+;SAMPLE_PFL003;samples, PFL
+;SAMPLE_TAT044;samples, TAT
+#;SAMPLE_GEL040;samples, GEL
+;SAMPLE_ODA016;samples, ODA
+;SAMPLE_LEO006;samples, LEO
+;SAMPLE_AES029;samples, AES
+#;SAMPLE_GLA002;samples, GLA
+;SAMPLE_REN018;samples, REN
+;SAMPLE_BBL103;samples, BBL
+;SAMPLE_EBY001_5ml;samples, EBY
+;SAMPLE_TOO046;samples, TOO
+;SAMPLE_AOS002_UPDATED;samples, AOS
+;SAMPLE_DRG04D;samples, DRG
+;SAMPLE_TIL049;samples, TIL
 
 # Create the base product to brand relation
 UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalogVersion
