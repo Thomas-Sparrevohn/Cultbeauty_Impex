@@ -18,5 +18,18 @@ $data_sheet=data_sheet(code, $catalogVersion)
 $medias=medias(code, $catalogVersion)
 $galleryImages=galleryImages(qualifier, $catalogVersion)
 
+
+# Media Folders
+INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
+;images;images
+;email-body;email-body
+;email-attachments;email-attachments
+;documents;documents
+
+# Media formats
+INSERT_UPDATE MediaFormat;qualifier[unique=true]
+;400x840;
+;400x800;
+
 INSERT_UPDATE Media; mediaFormat(qualifier); code[unique=true]; url ; realfilename;mime[default='image/jpeg']; $catalogVersion
-;SAC;840x400;http://d10qoa1dy3vloz.cloudfront.net/slots-img/bra/brandlanding_sachajuan_840x400-e4ev2.jpg#400x840-#848485;brandlanding_sachajuan_840x400-e4ev2.jpg#400x840-#848485;image/jpg
+;400x840;"400x840/brandlanding_thebeautychef_840x400-r3yvw.jpg#400x840-#dddbdc";"http://d10qoa1dy3vloz.cloudfront.net/slots-img/bra/brandlanding_thebeautychef_840x400-r3yvw.jpg#400x840-#dddbdc";"brandlanding_thebeautychef_840x400-r3yvw.jpg#400x840-#dddbdc"
