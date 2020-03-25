@@ -10,7 +10,7 @@ $facetSearchConfigName=cultbeautyIndex
 $facetSearchConfigDescription=Cultbeauty Solr Index
 $searchIndexNamePrefix=cultbeauty
 $solrIndexedType=cultbeautyProductType
-$indexBaseSite=electronics
+$indexBaseSite=cultbeauty
 $indexLanguages=ja,en,de,zh
 $indexCurrencies=JPY,USD
 
