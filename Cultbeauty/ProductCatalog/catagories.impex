@@ -282,7 +282,6 @@ INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang
 INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
 ;samples;brands
 ;gift;brands
-;inactive;brands
 ;ABD;brands
 ;AES;brands
 ;ALE;brands
