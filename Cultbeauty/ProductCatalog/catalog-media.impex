@@ -501,7 +501,7 @@ INSERT_UPDATE Media; mediaFormat(qualifier); code[unique=true]; url ; realfilena
 ;brands;/brands/logo/SRN;http://d10qoa1dy3vloz.cloudfront.net/slots-img/sun/sundayriley_logo-dupxz.jpg#200x400-#dad7da;sundayriley_logo-dupxz.jpg#200x400-#dad7da;images;;
 ;brands;/brands/logo/FRE;http://d10qoa1dy3vloz.cloudfront.net/slots-img/frefresh_400x200-j4iu5jpg#200x400-#363636;frefresh_400x200-j4iu5jpg#200x400-#363636;images;;
 
-INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrincipals(uid)[default='customergroup'];
+INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;TBC;/brands/main/TBC;/brands/main/TBC;/brands/logo/TBC;;
 ;SLI;/brands/main/SLI;/brands/main/SLI;/brands/logo/SLI;;
 ;BEL;/brands/main/BEL;/brands/main/BEL;/brands/logo/BEL;;
