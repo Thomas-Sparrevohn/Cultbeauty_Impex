@@ -32,7 +32,7 @@ $lang=en
 # Insert Categories
 INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;1;"Open Catalog";
-;brands, 1;"Cult Beauty brands Catagory";
+;brands;"Cult Beauty brands Catagory";
 ;samples;"Sample Products Catagory";
 ;gift;"Gift bags Category";
 
