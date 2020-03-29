@@ -32,7 +32,7 @@ $lang=en
 # Insert Categories
 INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;1;"Open Catalog";
-;brands;"Cult Beauty brands Catagory";
+;1;"Cult Beauty brands Catagory";
 ;samples;"Sample Products Catagory";
 ;gift;"Gift bags Category";
 
@@ -281,245 +281,486 @@ INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang
 
 # Insert Category Structure
 INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
-;samples;brands, 1
-;gift;brands, 1
-;ABD;brands, 1
-;AES;brands, 1
-;ALE;brands, 1
-;ALF;brands, 1
-;ALG;brands, 1
-;ALP;brands, 1
-;AME;brands, 1
-;ANA;brands, 1
-;ANG;brands, 1
-;ANP;brands, 1
-;ANY;brands, 1
-;AOS;brands, 1
-;APA;brands, 1
-;ATM;brands, 1
-;AUR;brands, 1
-;BAB;brands, 1
-;BAD;brands, 1
-;BAX;brands, 1
-;BBA;brands, 1
-;BBI;brands, 1
-;BBL;brands, 1
-;BCA;brands, 1
-;BEL;brands, 1
-;BEN;brands, 1
-;BEY;brands, 1
-;BLE;brands, 1
-;BLM;brands, 1
-;BON;brands, 1
-;BOT;brands, 1
-;BRI;brands, 1
-;BUX;brands, 1
-;BYT;brands, 1
-;CAE;brands, 1
-;CAU;brands, 1
-;CBY;brands, 1
-;CIT;brands, 1
-;CLO;brands, 1
-;COB;brands, 1
-;COO;brands, 1
-;COV;brands, 1
-;CSS;brands, 1
-;CUB;brands, 1
-;DAK;brands, 1
-;DAM;brands, 1
-;DAR;brands, 1
-;DAV;brands, 1
-;DBS;brands, 1
-;DCL;brands, 1
-;DCR;brands, 1
-;DEM;brands, 1
-;DEO;brands, 1
-;DIZ;brands, 1
-;DOD;brands, 1
-;DPE;brands, 1
-;DRG;brands, 1
-;DRM;brands, 1
-;DRU;brands, 1
-;EAS;brands, 1
-;EBY;brands, 1
-;ECO;brands, 1
-;EJA;brands, 1
-;ELL;brands, 1
-;EMH;brands, 1
-;EQU;brands, 1
-;ERN;brands, 1
-;ERS;brands, 1
-;EVE;brands, 1
-;FAI;brands, 1
-;FAR;brands, 1
-;FPJ;brands, 1
-;FRB;brands, 1
-;FRE;brands, 1
-;FSI;brands, 1
-;FUR;brands, 1
-;GHD;brands, 1
-;GLC;brands, 1
-;GLD;brands, 1
-;GLO;brands, 1
-;GOO;brands, 1
-;GRL;brands, 1
-;HER;brands, 1
-;HGL;brands, 1
-;HOU;brands, 1
-;HUD;brands, 1
-;ICO;brands, 1
-;IND;brands, 1
-;INK;brands, 1
-;INN;brands, 1
-;INV;brands, 1
-;IOP;brands, 1
-;IST;brands, 1
-;ITC;brands, 1
-;JAR;brands, 1
-;JIL;brands, 1
-;JOL;brands, 1
-;JOU;brands, 1
-;JRO;brands, 1
-;JVA;brands, 1
-;KAI;brands, 1
-;KAU;brands, 1
-;KBM;brands, 1
-;KIK;brands, 1
-;KIN;brands, 1
-;KJA;brands, 1
-;KNC;brands, 1
-;KNJ;brands, 1
-;KOS;brands, 1
-;KSV;brands, 1
-;KVA;brands, 1
-;KVM;brands, 1
-;LAN;brands, 1
-;LAR;brands, 1
-;LAU;brands, 1
-;LBZ;brands, 1
-;LEG;brands, 1
-;LEL;brands, 1
-;LEO;brands, 1
-;LEV;brands, 1
-;LIM;brands, 1
-;LIV;brands, 1
-;LLA;brands, 1
-;LOT;brands, 1
-;LUM;brands, 1
-;LUN;brands, 1
-;LUX;brands, 1
-;LVE;brands, 1
-;LVP;brands, 1
-;LXR;brands, 1
-;MAM;brands, 1
-;MAR;brands, 1
-;MDB;brands, 1
-;MEM;brands, 1
-;MGC;brands, 1
-;MGO;brands, 1
-;MIL;brands, 1
-;MOA;brands, 1
-;MOL;brands, 1
-;MOO;brands, 1
-;MRP;brands, 1
-;MRV;brands, 1
-;MVO;brands, 1
-;NAR;brands, 1
-;NAT;brands, 1
-;NIO;brands, 1
-;NUD;brands, 1
-;NUE;brands, 1
-;NUF;brands, 1
-;NUR;brands, 1
-;NUX;brands, 1
-;NYX;brands, 1
-;ODA;brands, 1
-;OLA;brands, 1
-;OMO;brands, 1
-;ORB;brands, 1
-;ORD;brands, 1
-;OSK;brands, 1
-;OUA;brands, 1
-;OVR;brands, 1
-;PAI;brands, 1
-;PAN;brands, 1
-;PAT;brands, 1
-;PAU;brands, 1
-;PFL;brands, 1
-;PGY;brands, 1
-;PHI;brands, 1
-;PIX;brands, 1
-;PLA;brands, 1
-;POC;brands, 1
-;PTA;brands, 1
-;PTB;brands, 1
-;PTR;brands, 1
-;RAE;brands, 1
-;RCO;brands, 1
-;RDF;brands, 1
-;REN;brands, 1
-;RHA;brands, 1
-;RJU;brands, 1
-;ROE;brands, 1
-;RON;brands, 1
-;RUB;brands, 1
-;RVT;brands, 1
-;SAC;brands, 1
-;SAN;brands, 1
-;SAS;brands, 1
-;SAT;brands, 1
-;SCH;brands, 1
-;SDJ;brands, 1
-;SDL;brands, 1
-;SHA;brands, 1
-;SHH;brands, 1
-;SHI;brands, 1
-;SIM;brands, 1
-;SKE;brands, 1
-;SKY;brands, 1
-;SLI;brands, 1
-;SMI;brands, 1
-;SMK;brands, 1
-;SPA;brands, 1
-;SRF;brands, 1
-;SRN;brands, 1
-;STI;brands, 1
-;STJ;brands, 1
-;SUM;brands, 1
-;SUR;brands, 1
-;TAN;brands, 1
-;TAT;brands, 1
-;TBC;brands, 1
-;TCF;brands, 1
-;THC;brands, 1
-;THP;brands, 1
-;TIA;brands, 1
-;TIL;brands, 1
-;TOM;brands, 1
-;TOO;brands, 1
-;TPV;brands, 1
-;TRB;brands, 1
-;TRO;brands, 1
-;TWE;brands, 1
-;TYF;brands, 1
-;UMA;brands, 1
-;UNB;brands, 1
-;UOM;brands, 1
-;URB;brands, 1
-;VEN;brands, 1
-;VER;brands, 1
-;VIE;brands, 1
-;VIN;brands, 1
-;VIR;brands, 1
-;VIS;brands, 1
-;VOT;brands, 1
-;WCO;brands, 1
-;WET;brands, 1
-;YUR;brands, 1
-;ZEL;brands, 1
-;ZIP;brands, 1
-;ZIT;brands, 1
-;ZOE;brands, 1
+;samples;brands
+;gift;brands
+;ABD;brands
+;AES;brands
+;ALE;brands
+;ALF;brands
+;ALG;brands
+;ALP;brands
+;AME;brands
+;ANA;brands
+;ANG;brands
+;ANP;brands
+;ANY;brands
+;AOS;brands
+;APA;brands
+;ATM;brands
+;AUR;brands
+;BAB;brands
+;BAD;brands
+;BAX;brands
+;BBA;brands
+;BBI;brands
+;BBL;brands
+;BCA;brands
+;BEL;brands
+;BEN;brands
+;BEY;brands
+;BLE;brands
+;BLM;brands
+;BON;brands
+;BOT;brands
+;BRI;brands
+;BUX;brands
+;BYT;brands
+;CAE;brands
+;CAU;brands
+;CBY;brands
+;CIT;brands
+;CLO;brands
+;COB;brands
+;COO;brands
+;COV;brands
+;CSS;brands
+;CUB;brands
+;DAK;brands
+;DAM;brands
+;DAR;brands
+;DAV;brands
+;DBS;brands
+;DCL;brands
+;DCR;brands
+;DEM;brands
+;DEO;brands
+;DIZ;brands
+;DOD;brands
+;DPE;brands
+;DRG;brands
+;DRM;brands
+;DRU;brands
+;EAS;brands
+;EBY;brands
+;ECO;brands
+;EJA;brands
+;ELL;brands
+;EMH;brands
+;EQU;brands
+;ERN;brands
+;ERS;brands
+;EVE;brands
+;FAI;brands
+;FAR;brands
+;FPJ;brands
+;FRB;brands
+;FRE;brands
+;FSI;brands
+;FUR;brands
+;GHD;brands
+;GLC;brands
+;GLD;brands
+;GLO;brands
+;GOO;brands
+;GRL;brands
+;HER;brands
+;HGL;brands
+;HOU;brands
+;HUD;brands
+;ICO;brands
+;IND;brands
+;INK;brands
+;INN;brands
+;INV;brands
+;IOP;brands
+;IST;brands
+;ITC;brands
+;JAR;brands
+;JIL;brands
+;JOL;brands
+;JOU;brands
+;JRO;brands
+;JVA;brands
+;KAI;brands
+;KAU;brands
+;KBM;brands
+;KIK;brands
+;KIN;brands
+;KJA;brands
+;KNC;brands
+;KNJ;brands
+;KOS;brands
+;KSV;brands
+;KVA;brands
+;KVM;brands
+;LAN;brands
+;LAR;brands
+;LAU;brands
+;LBZ;brands
+;LEG;brands
+;LEL;brands
+;LEO;brands
+;LEV;brands
+;LIM;brands
+;LIV;brands
+;LLA;brands
+;LOT;brands
+;LUM;brands
+;LUN;brands
+;LUX;brands
+;LVE;brands
+;LVP;brands
+;LXR;brands
+;MAM;brands
+;MAR;brands
+;MDB;brands
+;MEM;brands
+;MGC;brands
+;MGO;brands
+;MIL;brands
+;MOA;brands
+;MOL;brands
+;MOO;brands
+;MRP;brands
+;MRV;brands
+;MVO;brands
+;NAR;brands
+;NAT;brands
+;NIO;brands
+;NUD;brands
+;NUE;brands
+;NUF;brands
+;NUR;brands
+;NUX;brands
+;NYX;brands
+;ODA;brands
+;OLA;brands
+;OMO;brands
+;ORB;brands
+;ORD;brands
+;OSK;brands
+;OUA;brands
+;OVR;brands
+;PAI;brands
+;PAN;brands
+;PAT;brands
+;PAU;brands
+;PFL;brands
+;PGY;brands
+;PHI;brands
+;PIX;brands
+;PLA;brands
+;POC;brands
+;PTA;brands
+;PTB;brands
+;PTR;brands
+;RAE;brands
+;RCO;brands
+;RDF;brands
+;REN;brands
+;RHA;brands
+;RJU;brands
+;ROE;brands
+;RON;brands
+;RUB;brands
+;RVT;brands
+;SAC;brands
+;SAN;brands
+;SAS;brands
+;SAT;brands
+;SCH;brands
+;SDJ;brands
+;SDL;brands
+;SHA;brands
+;SHH;brands
+;SHI;brands
+;SIM;brands
+;SKE;brands
+;SKY;brands
+;SLI;brands
+;SMI;brands
+;SMK;brands
+;SPA;brands
+;SRF;brands
+;SRN;brands
+;STI;brands
+;STJ;brands
+;SUM;brands
+;SUR;brands
+;TAN;brands
+;TAT;brands
+;TBC;brands
+;TCF;brands
+;THC;brands
+;THP;brands
+;TIA;brands
+;TIL;brands
+;TOM;brands
+;TOO;brands
+;TPV;brands
+;TRB;brands
+;TRO;brands
+;TWE;brands
+;TYF;brands
+;UMA;brands
+;UNB;brands
+;UOM;brands
+;URB;brands
+;VEN;brands
+;VER;brands
+;VIE;brands
+;VIN;brands
+;VIR;brands
+;VIS;brands
+;VOT;brands
+;WCO;brands
+;WET;brands
+;YUR;brands
+;ZEL;brands
+;ZIP;brands
+;ZIT;brands
+;ZOE;brands
+
+INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
+;samples;1
+;gift;1
+;ABD;1
+;AES;1
+;ALE;1
+;ALF;1
+;ALG;1
+;ALP;1
+;AME;1
+;ANA;1
+;ANG;1
+;ANP;1
+;ANY;1
+;AOS;1
+;APA;1
+;ATM;1
+;AUR;1
+;BAB;1
+;BAD;1
+;BAX;1
+;BBA;1
+;BBI;1
+;BBL;1
+;BCA;1
+;BEL;1
+;BEN;1
+;BEY;1
+;BLE;1
+;BLM;1
+;BON;1
+;BOT;1
+;BRI;1
+;BUX;1
+;BYT;1
+;CAE;1
+;CAU;1
+;CBY;1
+;CIT;1
+;CLO;1
+;COB;1
+;COO;1
+;COV;1
+;CSS;1
+;CUB;1
+;DAK;1
+;DAM;1
+;DAR;1
+;DAV;1
+;DBS;1
+;DCL;1
+;DCR;1
+;DEM;1
+;DEO;1
+;DIZ;1
+;DOD;1
+;DPE;1
+;DRG;1
+;DRM;1
+;DRU;1
+;EAS;1
+;EBY;1
+;ECO;1
+;EJA;1
+;ELL;1
+;EMH;1
+;EQU;1
+;ERN;1
+;ERS;1
+;EVE;1
+;FAI;1
+;FAR;1
+;FPJ;1
+;FRB;1
+;FRE;1
+;FSI;1
+;FUR;1
+;GHD;1
+;GLC;1
+;GLD;1
+;GLO;1
+;GOO;1
+;GRL;1
+;HER;1
+;HGL;1
+;HOU;1
+;HUD;1
+;ICO;1
+;IND;1
+;INK;1
+;INN;1
+;INV;1
+;IOP;1
+;IST;1
+;ITC;1
+;JAR;1
+;JIL;1
+;JOL;1
+;JOU;1
+;JRO;1
+;JVA;1
+;KAI;1
+;KAU;1
+;KBM;1
+;KIK;1
+;KIN;1
+;KJA;1
+;KNC;1
+;KNJ;1
+;KOS;1
+;KSV;1
+;KVA;1
+;KVM;1
+;LAN;1
+;LAR;1
+;LAU;1
+;LBZ;1
+;LEG;1
+;LEL;1
+;LEO;1
+;LEV;1
+;LIM;1
+;LIV;1
+;LLA;1
+;LOT;1
+;LUM;1
+;LUN;1
+;LUX;1
+;LVE;1
+;LVP;1
+;LXR;1
+;MAM;1
+;MAR;1
+;MDB;1
+;MEM;1
+;MGC;1
+;MGO;1
+;MIL;1
+;MOA;1
+;MOL;1
+;MOO;1
+;MRP;1
+;MRV;1
+;MVO;1
+;NAR;1
+;NAT;1
+;NIO;1
+;NUD;1
+;NUE;1
+;NUF;1
+;NUR;1
+;NUX;1
+;NYX;1
+;ODA;1
+;OLA;1
+;OMO;1
+;ORB;1
+;ORD;1
+;OSK;1
+;OUA;1
+;OVR;1
+;PAI;1
+;PAN;1
+;PAT;1
+;PAU;1
+;PFL;1
+;PGY;1
+;PHI;1
+;PIX;1
+;PLA;1
+;POC;1
+;PTA;1
+;PTB;1
+;PTR;1
+;RAE;1
+;RCO;1
+;RDF;1
+;REN;1
+;RHA;1
+;RJU;1
+;ROE;1
+;RON;1
+;RUB;1
+;RVT;1
+;SAC;1
+;SAN;1
+;SAS;1
+;SAT;1
+;SCH;1
+;SDJ;1
+;SDL;1
+;SHA;1
+;SHH;1
+;SHI;1
+;SIM;1
+;SKE;1
+;SKY;1
+;SLI;1
+;SMI;1
+;SMK;1
+;SPA;1
+;SRF;1
+;SRN;1
+;STI;1
+;STJ;1
+;SUM;1
+;SUR;1
+;TAN;1
+;TAT;1
+;TBC;1
+;TCF;1
+;THC;1
+;THP;1
+;TIA;1
+;TIL;1
+;TOM;1
+;TOO;1
+;TPV;1
+;TRB;1
+;TRO;1
+;TWE;1
+;TYF;1
+;UMA;1
+;UNB;1
+;UOM;1
+;URB;1
+;VEN;1
+;VER;1
+;VIE;1
+;VIN;1
+;VIR;1
+;VIS;1
+;VOT;1
+;WCO;1
+;WET;1
+;YUR;1
+;ZEL;1
+;ZIP;1
+;ZIT;1
+;ZOE;1
 
 # Assign Product samples to the samples Category
 UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalogVersion
