@@ -14,13 +14,15 @@
 #
 # where the following source fields are used
 #
-#   Target Field                                Source Field
-#   ;products;/products/main/{productsku}       variant.main_image_src
-#   ;products;/products/swatch/{productsku}     variant.swatch_image_src
-#   ;products;/products/miniswatch/{productsku} variant.mini_swatch_image_src
-#   ;products;/products/image/{productsku}      product.image_srcs
+#   Target Field                                      Source Field
+#   ;products;/products/main/{productsku}             variant.main_image_src
+#   ;products;/products/swatch/{productsku}{filename} variant.swatch_image_src
+#   ;products;/products/miniswatch/{productsku}       variant.mini_swatch_image_src
+#   ;products;/products/image/{productsku}{filename}  product.image_srcs
 # 
-# For now the thumbnail are set to the asame as main_image_src
+# For now the thumbnail are set to the asame as main_image_src. Please note that
+# where there exist more than one picture the filename is needed to keep the main
+# code unique.
 #
 
 # Macros / Replacement Parameter definitions
