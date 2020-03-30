@@ -506,12 +506,12 @@ INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrinc
 ;SLI;/brands/main/SLI;/brands/main/SLI;/brands/logo/SLI;;
 ;BEL;/brands/main/BEL;/brands/main/BEL;/brands/logo/BEL;;
 ;ALE;/brands/main/ALE;/brands/main/ALE;/brands/logo/ALE;;
-;PFL;/brands/main/PFL;/brands/main/PFL;/brands/logo/PFL;;
+#;PFL;/brands/main/PFL;/brands/main/PFL;/brands/logo/PFL;;
 ;CUB;/brands/main/CUB;/brands/main/CUB;/brands/logo/CUB;;
 ;TAN;/brands/main/TAN;/brands/main/TAN;/brands/logo/TAN;;
 ;SHI;/brands/main/SHI;/brands/main/SHI;/brands/logo/SHI;;
 ;KOS;/brands/main/KOS;/brands/main/KOS;/brands/logo/KOS;;
-;CBY;/brands/main/CBY;/brands/main/CBY;/brands/logo/CBY;;
+#CBY;/brands/main/CBY;/brands/main/CBY;/brands/logo/CBY;;
 ;BAB;/brands/main/BAB;/brands/main/BAB;/brands/logo/BAB;;
 ;SUR;/brands/main/SUR;/brands/main/SUR;/brands/logo/SUR;;
 ;MAM;/brands/main/MAM;/brands/main/MAM;/brands/logo/MAM;;
@@ -550,8 +550,8 @@ INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrinc
 ;TWE;/brands/main/TWE;/brands/main/TWE;/brands/logo/TWE;;
 ;GLC;/brands/main/GLC;/brands/main/GLC;/brands/logo/GLC;;
 ;LVP;/brands/main/LVP;/brands/main/LVP;/brands/logo/LVP;;
-;CSS;/brands/main/CSS;/brands/main/CSS;/brands/logo/CSS;;
-;YUR;/brands/main/YUR;/brands/main/YUR;/brands/logo/YUR;;
+#;CSS;/brands/main/CSS;/brands/main/CSS;/brands/logo/CSS;;
+#;YUR;/brands/main/YUR;/brands/main/YUR;/brands/logo/YUR;;
 ;INN;/brands/main/INN;/brands/main/INN;/brands/logo/INN;;
 ;SMK;/brands/main/SMK;/brands/main/SMK;/brands/logo/SMK;;
 ;ALF;/brands/main/ALF;/brands/main/ALF;/brands/logo/ALF;;
@@ -628,7 +628,7 @@ INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrinc
 ;EBY;/brands/main/EBY;/brands/main/EBY;/brands/logo/EBY;;
 ;SDL;/brands/main/SDL;/brands/main/SDL;/brands/logo/SDL;;
 ;SAS;/brands/main/SAS;/brands/main/SAS;/brands/logo/SAS;;
-;KIK;/brands/main/KIK;/brands/main/KIK;/brands/logo/KIK;;
+#;KIK;/brands/main/KIK;/brands/main/KIK;/brands/logo/KIK;;
 ;LEO;/brands/main/LEO;/brands/main/LEO;/brands/logo/LEO;;
 ;VOT;/brands/main/VOT;/brands/main/VOT;/brands/logo/VOT;;
 ;MAR;/brands/main/MAR;/brands/main/MAR;/brands/logo/MAR;;
@@ -656,10 +656,10 @@ INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrinc
 ;LIV;/brands/main/LIV;/brands/main/LIV;/brands/logo/LIV;;
 ;LEL;/brands/main/LEL;/brands/main/LEL;/brands/logo/LEL;;
 ;OSK;/brands/main/OSK;/brands/main/OSK;/brands/logo/OSK;;
-;EJA;/brands/main/EJA;/brands/main/EJA;/brands/logo/EJA;;
+#;EJA;/brands/main/EJA;/brands/main/EJA;/brands/logo/EJA;;
 ;LAU;/brands/main/LAU;/brands/main/LAU;/brands/logo/LAU;;
 ;ERS;/brands/main/ERS;/brands/main/ERS;/brands/logo/ERS;;
-;KBM;/brands/main/KBM;/brands/main/KBM;/brands/logo/KBM;;
+#;KBM;/brands/main/KBM;/brands/main/KBM;/brands/logo/KBM;;
 ;NAT;/brands/main/NAT;/brands/main/NAT;/brands/logo/NAT;;
 ;LLA;/brands/main/LLA;/brands/main/LLA;/brands/logo/LLA;;
 ;KIN;/brands/main/KIN;/brands/main/KIN;/brands/logo/KIN;;
@@ -673,7 +673,7 @@ INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrinc
 ;SAT;/brands/main/SAT;/brands/main/SAT;/brands/logo/SAT;;
 ;DPE;/brands/main/DPE;/brands/main/DPE;/brands/logo/DPE;;
 ;BEY;/brands/main/BEY;/brands/main/BEY;/brands/logo/BEY;;
-;DCL;/brands/main/DCL;/brands/main/DCL;/brands/logo/DCL;;
+#;DCL;/brands/main/DCL;/brands/main/DCL;/brands/logo/DCL;;
 ;LXR;/brands/main/LXR;/brands/main/LXR;/brands/logo/LXR;;
 ;COB;/brands/main/COB;/brands/main/COB;/brands/logo/COB;;
 ;RJU;/brands/main/RJU;/brands/main/RJU;/brands/logo/RJU;;
