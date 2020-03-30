@@ -41,3 +41,5 @@ $galleryImages=galleryImages(qualifier, $catalogVersion)
 # The macro below is only needed if we load images from disk
 $siteResource=jar:de.hybris.platform.electronicsstore.constants.ElectronicsstoreConstants&/electronicsstore/import/sampledata/productCatalogs/$productCatalog
 
+INSERT_UPDATE Media; mediaFormat(qualifier); code[unique=true]; url ; realfilename;folder(qualifier);mime[default='image/jpeg'];$catalogVersion
+;products;/products/main/KJA001_Embrace;http://d10qoa1dy3vloz.cloudfront.net/slots-img/xxx/xxx_kjaerweis_creamblush_embrace_1560x1960-dsfry.jpg#1960x1560-#dfcdcb;xxx_kjaerweis_creamblush_embrace_1560x1960-dsfry.jpg#1960x1560-#dfcdcb;images;;
