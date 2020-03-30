@@ -1,3 +1,28 @@
+#----------------------------
+# The Cultbeauty product images are spanning two different sources 
+# one hold a list (table products) and the other one (variant) holds
+# the main image, mini swatch images and swatch images.
+# 
+# As with the brands table I am not sure that the used structure are ideal. In 
+# order keep the layout consistant with the current structure images are stored
+# under products image category (defined in catalog-media) hence the structure 
+# becomes
+#       ;products;/products/main/{productsku}
+#       ;products;/products/swatch/{productsku}
+#       ;products;/products/miniswatch/{productsku}
+#       ;products;/products/image/{productsku}
+#
+# where the following source fields are used
+#
+#   Target Field                                Source Field
+#   ;products;/products/main/{productsku}       variant.main_image_src
+#   ;products;/products/swatch/{productsku}     variant.swatch_image_src
+#   ;products;/products/miniswatch/{productsku} variant.mini_swatch_image_src
+#   ;products;/products/image/{productsku}      product.image_srcs
+# 
+# For now the thumbnail are set to the asame as main_image_src
+#
+
 # Macros / Replacement Parameter definitions
 $productCatalog=cultbeautyProductCatalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
