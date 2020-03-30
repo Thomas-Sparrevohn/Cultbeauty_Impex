@@ -34,8 +34,11 @@ INSERT_UPDATE MediaFormat;qualifier[unique=true]
 ;400x840;
 ;products;
 
-INSERT_UPDATE Media; mediaFormat(qualifier); code[unique=true]; url ; realfilename;folder(qualifier);mime[default='image/jpeg'];$catalogVersion
-;brands;/brands/main/TBC;http://d10qoa1dy3vloz.cloudfront.net/slots-img/bra/brandlanding_thebeautychef_840x400-r3yvw.jpg#400x840-#dddbdc;brandlanding_thebeautychef_840x400-r3yvw.jpg#400x840-#dddbdc;images;;
+
+UPDATE Media; mediaFormat(qualifier); code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator]; realfilename;folder(qualifier);mime[set='image/jpeg'];$catalogVersion
+;brands;/brands/main/TBC;http://d10qoa1dy3vloz.cloudfront.net/slots-img/bra/brandlanding_thebeautychef_840x400-r3yvw.jpg#400x840-#dddbdc;brandlanding_thebeautychef_840x400-r3yvw.jpg;images;image/jpeg;
+
+UPDATE Media; mediaFormat(qualifier); code[unique=true];url; realfilename;folder(qualifier);mime[set='image/jpeg'];$catalogVersion
 ;brands;/brands/main/SLI;http://d10qoa1dy3vloz.cloudfront.net/slots-img/bra/brandlanding_slip_840x400-32fnk.jpg#400x840-#d3a9a1;brandlanding_slip_840x400-32fnk.jpg#400x840-#d3a9a1;images;;
 ;brands;/brands/main/BEL;http://d10qoa1dy3vloz.cloudfront.net/slots-img/bra/brandlanding_bella-freud_840x400-zif39.jpg#400x840-#eeebe8;brandlanding_bella-freud_840x400-zif39.jpg#400x840-#eeebe8;images;;
 ;brands;/brands/main/ALE;http://d10qoa1dy3vloz.cloudfront.net/slots-img/bra/brandlanding_alleven_840x400-2-ccyap.jpg#400x840-#382522;brandlanding_alleven_840x400-2-ccyap.jpg#400x840-#382522;images;;
@@ -501,7 +504,7 @@ INSERT_UPDATE Media; mediaFormat(qualifier); code[unique=true]; url ; realfilena
 ;brands;/brands/logo/SRN;http://d10qoa1dy3vloz.cloudfront.net/slots-img/sun/sundayriley_logo-dupxz.jpg#200x400-#dad7da;sundayriley_logo-dupxz.jpg#200x400-#dad7da;images;;
 ;brands;/brands/logo/FRE;http://d10qoa1dy3vloz.cloudfront.net/slots-img/frefresh_400x200-j4iu5jpg#200x400-#363636;frefresh_400x200-j4iu5jpg#200x400-#363636;images;;
 
-INSERT_UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
+UPDATE Category;code[unique=true];$thumbnail;$picture;$logos;allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;TBC;/brands/main/TBC;/brands/main/TBC;/brands/logo/TBC;;
 ;SLI;/brands/main/SLI;/brands/main/SLI;/brands/logo/SLI;;
 ;BEL;/brands/main/BEL;/brands/main/BEL;/brands/logo/BEL;;
