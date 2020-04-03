@@ -20,6 +20,7 @@ $productCatalog=cultbeautyProductCatalog
 $productCatalogName="Cult Beauty Product Catalog"
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $supercategories=source(code, $catalogVersion)[unique=true]
+$supercategories2=supercategories(code, $catalogVersion)
 $categories=target(code, $catalogVersion)[unique=true]
 $lang=en
 
@@ -28,6 +29,7 @@ $lang=en
 # "Sample" for the Catagory for all product samples (They are variants as well) and
 # "Gift" for Gift bags etc etc. Gift catagory are a bit fishy
 #
+
 
 # Insert Categories
 INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
