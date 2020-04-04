@@ -41,7 +41,7 @@ $galleryImages=galleryImages(qualifier, $catalogVersion)
 # The macro below is only needed if we load images from disk
 $siteResource=jar:de.hybris.platform.electronicsstore.constants.ElectronicsstoreConstants&/electronicsstore/import/sampledata/productCatalogs/$productCatalog
 
-UPDATE Media; mediaFormat(qualifier); code[unique=true]; url ; realfilename;folder(qualifier);mime[default='image/jpeg'];$catalogVersion
+INSERT_UPDATE Media; mediaFormat(qualifier); code[unique=true]; url ; realfilename;folder(qualifier);mime[default='image/jpeg'];$catalogVersion
 ;products;/products/main/KJA001_Embrace;http://d10qoa1dy3vloz.cloudfront.net/slots-img/xxx/xxx_kjaerweis_creamblush_embrace_1560x1960-dsfry.jpg#1960x1560-#dfcdcb;xxx_kjaerweis_creamblush_embrace_1560x1960-dsfry.jpg#1960x1560-#dfcdcb;images;image/jpeg;
 ;products;/products/main/TIL116;http://d10qoa1dy3vloz.cloudfront.net/slots-img/tiltil116_charlottetilbury_collagenlipbath_2_1560x1960-9yc70jpg#1960x1560-#f4d6c7;tiltil116_charlottetilbury_collagenlipbath_2_1560x1960-9yc70jpg#1960x1560-#f4d6c7;images;image/jpeg;
 ;products;/products/main/BYT039_1_Fresh_Fair;http://d10qoa1dy3vloz.cloudfront.net/slots-img/byt/byt039_byterry_terryblydensilissconcealer_1fairfresh_1560x1960-l4vap.jpg#1960x1560-#e0cec9;byt039_byterry_terryblydensilissconcealer_1fairfresh_1560x1960-l4vap.jpg#1960x1560-#e0cec9;images;image/jpeg;
