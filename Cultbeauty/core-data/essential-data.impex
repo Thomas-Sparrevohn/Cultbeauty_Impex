@@ -1,0 +1,69 @@
+#
+# This file contains essential data used through out
+#
+# 1) Media Folders
+# 2) Media Formats
+#
+
+# Macros / Replacement Parameter definitions
+$productCatalog=cultbeautyProductCatalog
+$productCatalogName="Cult Beauty Product Catalog"
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$supercategories=source(code, $catalogVersion)[unique=true]
+$categories=target(code, $catalogVersion)[unique=true]
+
+$lang=en
+
+$thumbnail=thumbnail(code, $catalogVersion)
+$picture=picture(code, $catalogVersion)
+$thumbnails=thumbnails(code, $catalogVersion)
+$detail=detail(code, $catalogVersion)
+$normal=normal(code, $catalogVersion)
+$others=others(code, $catalogVersion)
+$data_sheet=data_sheet(code, $catalogVersion)
+$medias=medias(code, $catalogVersion)
+$logos=logo(code, $catalogVersion)
+$galleryImages=galleryImages(qualifier, $catalogVersion)
+
+
+# Media Folders
+INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
+;images;images
+;email-body;email-body
+;email-attachments;email-attachments
+;documents;documents
+
+# Media formats
+#
+# All raw images are indexed on the string /mediaformat/filename requireing each
+# media combination to be unique
+#
+
+INSERT_UPDATE MediaFormat;qualifier[unique=true]
+;brands;
+;products;
+;WxH;
+;73Wx09H;
+;362Wx36H;
+;40Wx400H;
+;237Wx316H;
+;326Wx326H;
+;360Wx360H;
+;362Wx362H;
+;400Wx200H;
+;400Wx400H;
+;400Wx840H;
+;500Wx400H;
+;500Wx500H;
+;780Wx980H;
+;800Wx960H;
+;840Wx400H;
+;400Wx4000H;
+;4400Wx400H;
+;560Wx1960H;
+;1560Wx1560H;
+;1560Wx1920H;
+;1560Wx1960H;
+;1560Wx1980H;
+;2000Wx2000H;
+;2400Wx3680H;
