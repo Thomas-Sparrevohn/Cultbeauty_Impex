@@ -5,9 +5,11 @@
 
 ####
 # 
-# Most masterfully copied by Thomas
+# Most masterfully copied by Thomas, note the essential-data.impex has to be loaded 
+# before this one
 #
 ###
+
 # Macros / Replacement Parameter definitions
 $productCatalog=cultbeautyProductCatalog
 $productCatalogName="Cult Beauty Product Catalog"

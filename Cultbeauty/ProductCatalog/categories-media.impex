@@ -1,3 +1,7 @@
+######
+# note the essential-data.impex has to be loaded 
+# before this file
+#####
 
 # Macros / Replacement Parameter definitions
 $productCatalog=cultbeautyProductCatalog
@@ -19,43 +23,6 @@ $medias=medias(code, $catalogVersion)
 $logos=logo(code, $catalogVersion)
 $galleryImages=galleryImages(qualifier, $catalogVersion)
 
-
-# Media Folders
-INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
-;images;images
-;email-body;email-body
-;email-attachments;email-attachments
-;documents;documents
-
-# Media formats
-INSERT_UPDATE MediaFormat;qualifier[unique=true]
-;brands;
-;products;
-;WxH;
-;73Wx09H;
-;362Wx36H;
-;40Wx400H;
-;237Wx316H;
-;326Wx326H;
-;360Wx360H;
-;362Wx362H;
-;400Wx200H;
-;400Wx400H;
-;400Wx840H;
-;500Wx400H;
-;500Wx500H;
-;780Wx980H;
-;800Wx960H;
-;840Wx400H;
-;400Wx4000H;
-;4400Wx400H;
-;560Wx1960H;
-;1560Wx1560H;
-;1560Wx1920H;
-;1560Wx1960H;
-;1560Wx1980H;
-;2000Wx2000H;
-;2400Wx3680H;
 
 
 INSERT_UPDATE  Media; mediaFormat(qualifier); code[unique=true];url; realfilename;folder(qualifier);mime[default='image/jpeg'];$catalogVersion
