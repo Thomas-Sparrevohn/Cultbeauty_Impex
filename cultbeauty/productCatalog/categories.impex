@@ -37,7 +37,7 @@ INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang
 ;brands;"Cult Beauty brands Catagory";
 ;samples;"Sample Products Catagory";
 ;gift;"Gift bags Category";
-;cbsttr;"Cult Beauty Attributes"
+;cbattr;"Cult Beauty Attributes"
 
 #
 # Cult Beauty Attributes
