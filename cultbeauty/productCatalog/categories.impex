@@ -1017,7 +1017,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;SAMPLE_ZEL021;samples, ZEL
 ;SAMPLE_CAU017;samples, CAU
 ;SAMPLE_AES002;samples, AES
-;SAMPLE_AES004_;samples, AES
+;SAMPLE_AES004;samples, AES
 ;SAMPLE_BCA045_MedTan;samples, BCA
 ;SAMPLE_ODA032;samples, ODA
 ;SAMPLE_BEN079_91112;samples, BEN
@@ -1555,7 +1555,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;SAMPLE_DAV020;samples, DAV
 ;SAMPLE_DAK005;samples, DAK
 ;SAMPLE_SAC023;samples, SAC
-;SAMPLE_SKY007_;samples, SKY
+;SAMPLE_SKY007;samples, SKY
 ;SAMPLE_ALP007_15ml;samples, ALP
 ;SAMPLE_ODA036;samples, ODA
 ;SAMPLE_TAT007;samples, TAT
@@ -1570,7 +1570,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;SAMPLE_DRG006Serum;samples, DRG
 ;SAMPLE_DRG029;samples, DRG
 ;SAMPLE_TIL022_MED6;samples, TIL
-;SAMPLE_DRG033_2ML_;samples, DRG
+;SAMPLE_DRG033_2ML;samples, DRG
 ;SAMPLE_LXR003;samples, LXR
 ;SAMPLE_ALP019_4ml;samples, ALP
 ;SAMPLE_CAU110;samples, CAU
@@ -1691,7 +1691,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;SAMPLE_PAI004;samples, PAI
 ;SAMPLE_ALG009;samples, ALG
 ;SAMPLE_JOU012;samples, JOU
-;SAMPLE_OSK011_;samples, OSK
+;SAMPLE_OSK011;samples, OSK
 ;SAMPLE_EVE005_5ML;samples, EVE
 ;SAMPLE_JOU017_Chamomile;samples, JOU
 ;SAMPLE_DAV032;samples, DAV
@@ -2828,7 +2828,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;BEN034_06_Deep;BEN
 ;HOU030_ROSEGD;HOU
 ;GHD003;GHD
-;UOM013_;UOM
+;UOM013;UOM
 ;LAU036_NUTMEG;LAU
 ;NAT005_DARK;NAT
 ;BCA148_CHILL;BCA
@@ -4638,7 +4638,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;MVO013;MVO
 ;RDF005_Phosphene;RDF
 ;RVT007;RVT
-;PIX184_;PIX
+;PIX184;PIX
 ;HOU031_BUFF;HOU
 ;LAU036_IVORY;LAU
 ;DRG011_5_Treatments;DRG
@@ -4709,7 +4709,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;BBA012_CHURRO;BBA
 ;MIL006_TAN;MIL
 ;NYX013_Sapphire;NYX
-;INK029_;INK
+;INK029;INK
 ;AES029;AES
 ;TRO002;TRO
 ;NYX161_COCOA;NYX
@@ -4929,7 +4929,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;NUD077_6;NUD
 ;MOL010;MOL
 ;HER015_236ML;HER
-;MRP208_;MRP
+;MRP208;MRP
 ;BYT023_11_Amber_Brown;BYT
 ;LIM043_COCO;LIM
 ;NAT026_POWDER;NAT
@@ -6203,7 +6203,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;LIM020_Vision;LIM
 ;LAN006;LAN
 ;UOM010_LBLOND;UOM
-;FRB020_;FRB
+;FRB020;FRB
 ;NAT005_WARM;NAT
 ;PIX146;PIX
 ;SHI020_50ML;SHI
@@ -7108,7 +7108,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;BCA025_Opal;BCA
 ;ANA077_Pink_Passion;ANA
 ;IND029_10ML;IND
-;KVM015_;KVM
+;KVM015;KVM
 ;CAU058;CAU
 ;ZOE091_Black;ZOE
 ;JAR030;JAR
@@ -10133,7 +10133,7 @@ UPDATE Product;code[unique=true];supercategories(code, $catalogVersion);$catalog
 ;TWE022;TWE
 ;LXR010;LXR
 ;KOS001_06;KOS
-;TOO100_;TOO
+;TOO100;TOO
 ;FRB016;FRB
 ;BEN179_5;BEN
 ;NYX110_Potion;NYX
