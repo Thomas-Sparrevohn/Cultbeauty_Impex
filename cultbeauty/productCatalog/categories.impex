@@ -35,10 +35,36 @@ $lang=en
 INSERT_UPDATE Category;code[unique=true];name[lang=$lang];description[lang=$lang];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 ;1;"Open Catalogue";
 ;brands;"Cult Beauty brands Catagory";
-;standard;"Cult Beauty Standard Products Category"
+;standard;"Cult Beauty Standard Products Category";
 ;samples;"Cult Beauty Sample Products Catagory";
 ;gift;"Gift bags Category";
-;cbattr;"Cult Beauty Attributes"
+;cbattr;"Cult Beauty Attributes";
+;WxH;"Dummy place Holder for errors";
+;73Wx09H;"73Wx09H";
+;362Wx36H;"362Wx36H";
+;40Wx400H;"40Wx400H";
+;237Wx316H;"237Wx316H";
+;326Wx326H;"326Wx326H";
+;360Wx360H;"360Wx360H";
+;362Wx362H;"362Wx362H";
+;400Wx200H;"400Wx200H";
+;400Wx400H;"400Wx400H";
+;400Wx840H;"400Wx840H";
+;500Wx400H;"500Wx400H";
+;500Wx500H;"500Wx500H";
+;780Wx980H;"780Wx980H";
+;800Wx960H;"800Wx960H";
+;840Wx400H;"840Wx400H";
+;400Wx4000H;"400Wx4000H";
+;4400Wx400H;"4400Wx400H";
+;560Wx1960H;"560Wx1960H";
+;1560Wx1560H;"1560Wx1560H";
+;1560Wx1920H;"1560Wx1920H";
+;1560Wx1960H;"1560Wx1960H";
+;1560Wx1980H;"1560Wx1980H";
+;2000Wx2000H;"2000Wx2000H";
+;2400Wx3680H;"2400Wx3680H";
+
 
 #
 # Cult Beauty Attributes

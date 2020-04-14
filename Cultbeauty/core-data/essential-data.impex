@@ -42,6 +42,10 @@ INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
 INSERT_UPDATE MediaFormat;qualifier[unique=true]
 ;brands;
 ;products;
+;standard;
+;samples;
+;gift;
+;cbattr;
 ;WxH;
 ;73Wx09H;
 ;362Wx36H;
