@@ -38,17 +38,17 @@ INSERT_UPDATE SolrValueRangeSet;name[unique=true];qualifier;type;solrValueRanges
 
 # Define price ranges
 INSERT_UPDATE SolrValueRange;&rangeValueRefID;solrValueRangeSet(name)[unique=true];name[unique=true];from;to
-;rangeRefGBP1;cultbeautyPriceRangeGBP;      $0-$49.99;   0;  49.99
-;rangeRefGBP2;cultbeautyPriceRangeGBP;    $50-$199.99;  50; 199.99
-;rangeRefGBP3;cultbeautyPriceRangeGBP;   $200-$499.99; 200; 499.99
-;rangeRefGBP4;cultbeautyPriceRangeGBP;   $500-$999.99; 500; 999.99
-;rangeRefGBP5;cultbeautyPriceRangeGBP;$1,000-$100,000;1000; 100000
+;rangeRefGBP1;cultbeautyPriceRangeGBP;      £0-£49.99;   0;  49.99
+;rangeRefGBP2;cultbeautyPriceRangeGBP;    £50-£199.99;  50; 199.99
+;rangeRefGBP3;cultbeautyPriceRangeGBP;   £200-£499.99; 200; 499.99
+;rangeRefGBP4;cultbeautyPriceRangeGBP;   £500-£999.99; 500; 999.99
+;rangeRefGBP5;cultbeautyPriceRangeGBP;£1,000-£100,000;1000; 100000
 
-;rangeRefEUR1;cultbeautyPriceRangeEUR;           ¥0-¥4,999;     0;    4999
-;rangeRefEUR2;cultbeautyPriceRangeEUR;      ¥5,000-¥19,999;  5000;   19999
-;rangeRefEUR3;cultbeautyPriceRangeEUR;     ¥20,000-¥49,999; 20000;   49999
-;rangeRefEUR4;cultbeautyPriceRangeEUR;     ¥50,000-¥99,999; 50000;   99999
-;rangeRefEUR5;cultbeautyPriceRangeEUR;¥100,000-¥10,000,000;100000;10000000
+;rangeRefEUR1;cultbeautyPriceRangeEUR;           €0-€4,999;     0;    4999
+;rangeRefEUR2;cultbeautyPriceRangeEUR;      €5,000-€19,999;  5000;   19999
+;rangeRefEUR3;cultbeautyPriceRangeEUR;     €20,000-€49,999; 20000;   49999
+;rangeRefEUR4;cultbeautyPriceRangeEUR;     €50,000-€99,999; 50000;   99999
+;rangeRefEUR5;cultbeautyPriceRangeEUR;€100,000-€10,000,000;100000;10000000
 
 
 # Non-facet properties
@@ -69,6 +69,8 @@ INSERT_UPDATE SolrIndexedProperty;solrIndexedType(identifier)[unique=true];name[
 ;$solrIndexedType; img-96Wx96H            ;string ;            ;    ;    ;    ;    ;    ;image96ValueProvider                   ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
 ;$solrIndexedType; img-65Wx65H            ;string ;            ;    ;    ;    ;    ;    ;image65ValueProvider                   ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
 ;$solrIndexedType; img-30Wx30H            ;string ;            ;    ;    ;    ;    ;    ;image30ValueProvider                   ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
+;$solrIndexedType; img-1560Wx1960H        ;string ;            ;    ;    ;    ;    ;    ;image1560ValueProvider                 ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
+;$solrIndexedType; img-400Wx400H          ;string ;            ;    ;    ;    ;    ;    ;image400ValueProvider                  ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
 ;$solrIndexedType; url                    ;string ;            ;    ;true;    ;    ;    ;productUrlValueProvider                ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
 ;$solrIndexedType; primaryPromotionCode   ;string ;            ;    ;    ;    ;    ;    ;promotionCodeValueProvider             ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
 ;$solrIndexedType; primaryPromotionBanner ;string ;            ;    ;    ;    ;    ;    ;promotionImageValueProvider            ;              ;    ;   ;    ;   ;    ;  ;    ;   ;  ;
@@ -165,6 +167,8 @@ INSERT_UPDATE SolrSearchQueryProperty ; indexedProperty(name, solrIndexedType(id
                                       ; img-96Wx96H:$solrIndexedType                                    ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
                                       ; img-65Wx65H:$solrIndexedType                                    ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
                                       ; img-30Wx30H:$solrIndexedType                                    ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
+                                      ; img-1560Wx1960H:$solrIndexedType                                ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
+                                      ; img-400Wx400H:$solrIndexedType                                  ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
                                       ; url:$solrIndexedType                                            ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
                                       ; primaryPromotionCode:$solrIndexedType                           ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
                                       ; primaryPromotionBanner:$solrIndexedType                         ;                                                                                                   ;       ;                               ;                     ;                         ;               ;                              ;                    ;                                 ;                                             ;                       ;                               ;                                 ;                                    
