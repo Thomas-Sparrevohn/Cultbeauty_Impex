@@ -7,10 +7,10 @@
 
 $productCatalog=cultbeautyProductCatalog
 $classificationCatalog=CultbeautyClassification
-$currencies=JPY,USD
+$currencies=GBP,EUR
 $net=false
 $storeUid=cultbeauty
-$defaultCurrency=USD
+$defaultCurrency=GBP
 $languages=ja,en,de,zh
 $defaultLanguage=en
 $unitedKingdom=GB,GG,IM,JE
